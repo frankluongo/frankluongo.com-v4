@@ -1,0 +1,66 @@
+/* * All The Things */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* * Within the `main` tag */
+/* ? * */
+main * + * {
+  margin-top: 1rem;
+}
+/* ? a tags */
+main a {
+  --link-color: var(--link-dark);
+  position: relative;
+
+  color: var(--link-color);
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+main a:after {
+  left: 0;
+  position: absolute;
+  top: 100%;
+
+  height: 2px;
+  width: 100%;
+
+  content: "";
+
+  background-color: var(--link-color);
+  opacity: 0.2;
+}
+
+main a:hover,
+main a:focus {
+  color: var(--white);
+
+  background-color: var(--link-color);
+}
+
+main a.on-dark {
+  --link-color: var(--link-light);
+}
+
+/* * Horizontal Rules */
+
+main hr {
+  --vertical-spacing: 2rem;
+  position: relative;
+
+  margin-bottom: var(--vertical-spacing);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: var(--vertical-spacing);
+  padding-bottom: 3px;
+  padding-top: 3px;
+  width: 100%;
+  /* Compensate for padding */
+  max-width: calc(var(--container-width) - 2rem);
+
+  border: none;
+  border-top: 2px solid var(--gray-1);
+}

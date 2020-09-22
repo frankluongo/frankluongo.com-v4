@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Silka Web";
+  src: url("../../../../fonts/silka-regular-webfont.woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Silka Web";
+  src: url("../../../../fonts/silka-bold-webfont.woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Silka Web";
+  src: url("../../../../fonts/silka-bolditalic-webfont.woff2");
+  font-style: italic;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Silka Web";
+  src: url("../../../../fonts/silka-black-webfont.woff2");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Knile Web";
+  src: url("../../../../fonts/knile-regular-webfont.woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Knile Web";
+  src: url("../../../../fonts/knile-black-webfont.woff2");
+  font-weight: 900;
+}
+
+:root {
+  /* * Colors ------------------- */
+  --yellow: #fec61d;
+  --red: #fc3b12;
+  --blue: #16769b;
+  --teal: #1dacc0;
+  --green: #0bc17f;
+
+  --white: #ffffff;
+  --gray-1: #f5f5f5;
+  --gray-2: #cbc9c8;
+  --gray-3: #8b8989;
+  --gray-4: #626160;
+  --gray-5: #413f3e;
+  --black: #272321;
+
+  --gradient-grayscale: linear-gradient(
+    180deg,
+    var(--gray-1) 0%,
+    var(--white) 100%
+  );
+  --gradient-alt: linear-gradient(180deg, var(--teal) 0%, var(--green) 100%);
+  --gradient-warm: linear-gradient(180deg, var(--red) 0%, var(--yellow) 100%);
+  --gradient-cool: linear-gradient(180deg, var(--teal) 0%, var(--blue) 100%);
+  /* * Typography ------------------- */
+  --sans-serif: "Silka Web", sans-serif;
+  --serif: "Knile Web", serif;
+  /* * Typography: Font Sizes -----  */
+  --h1: 2em;
+  --h2: 1.5em;
+  --h3: 1.125em;
+  --h4: 1em;
+  --h5: 0.875em;
+  --h6: 0.75em;
+  --paragraph: 1em;
+  --small: 0.625em;
+
+  /* * Theme Settings ------------------- */
+  /* ? Container Width */
+  --container-width: 88rem;
+  /* ? Type */
+  --primary-font: var(--sans-serif);
+  --secondary-font: var(--serif);
+  /* ? Text Colors */
+  --text-black: var(--black);
+  --link-dark: var(--blue);
+  --link-light: var(--teal);
+  --subtext-dark: var(--gray-3);
+  --subtext-light: var(--gray-1);
+  --text-white: var(--white);
+}

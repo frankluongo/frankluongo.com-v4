@@ -1,0 +1,35 @@
+.Swatch {
+  width: 6rem;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.Swatch > * + * {
+  margin-top: 0.5rem;
+}
+
+.Color {
+  height: 6rem;
+  width: 6rem;
+
+  border-radius: 0.5rem;
+}
+
+.Title {
+  color: var(--text-black);
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 900;
+  font-size: var(--h5);
+  line-height: 1.2;
+}
+
+.Hex {
+  color: var(--text-black);
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--h5);
+  line-height: 1.2;
+}

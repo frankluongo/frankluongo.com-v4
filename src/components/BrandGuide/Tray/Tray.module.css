@@ -1,0 +1,10 @@
+.Tray {
+  display: flex;
+  padding: 1rem;
+
+  background-color: #f9f9f9;
+}
+
+.Tray > * {
+  margin-right: 1rem;
+}
