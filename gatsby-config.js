@@ -1,3 +1,5 @@
+const { moduleResolver } = require("./config/plugins")
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -27,22 +29,7 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: "gatsby-plugin-module-resolver",
-      options: {
-        root: "./src", // <- will be used as a root dir
-        aliases: {
-          "@components": "./components", // <- will become ./src/components
-          "@global": "./components/Global", // <- will become ./src/components
-          "@helpers": "./helpers", // <- will become ./src/helpers
-          "@hooks": "./hooks", // <- will become ./src/helpers
-          static: {
-            root: "./public", // <- will used as this alias' root dir
-            alias: "./static", // <- will become ./public/static
-          },
-        },
-      },
-    },
+    moduleResolver,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

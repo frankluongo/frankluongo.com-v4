@@ -1,0 +1,87 @@
+.Header {
+  position: relative;
+
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.Header:before {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  background-color: var(--black);
+  content: "";
+  opacity: 0.5;
+}
+
+.Header:after {
+  left: 50%;
+  position: absolute;
+  top: 100%;
+
+  height: 2px;
+  width: calc(100% - 2rem);
+  max-width: var(--wrapper-width);
+
+  background-color: var(--gray-1);
+  content: "";
+  opacity: 0.1;
+  transform: translateX(-50%);
+}
+
+.Content {
+  position: relative;
+
+  align-items: center;
+  display: flex;
+
+  color: var(--white);
+}
+
+.HeaderLogo {
+  display: block;
+  margin-right: 1rem;
+}
+
+.HeaderNav {
+  flex: 0 1 100%;
+}
+
+.HeaderNavUl {
+  align-items: center;
+  display: flex;
+}
+
+.HeaderNavLi:not(:last-of-type) {
+  margin-right: 2rem;
+}
+
+.HeaderNavLink {
+  position: relative;
+  top: -2px;
+
+  color: var(--white);
+  text-decoration: none;
+}
+
+.HeaderSocial {
+  flex: 0 1 auto;
+}
+
+.HeaderSocialUl {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.HeaderSocialLi {
+  margin-right: 0.5rem;
+}
+
+.HeaderSocialIcon {
+  height: 1rem;
+
+  fill: var(--white);
+}
