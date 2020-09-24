@@ -1,5 +1,6 @@
 import React from "react"
 
+import Footer from "@global/Footer"
 import Header from "@global/Header"
 
 import "./Styles/Reset.css"
@@ -12,11 +13,7 @@ export default function Layout({ children }) {
     <>
       <Header />
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
-      </footer>
+      <Footer />
     </>
   )
 }

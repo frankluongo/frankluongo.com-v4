@@ -1,0 +1,17 @@
+.Footer {
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+
+  color: var(--white);
+
+  background-color: var(--black);
+}
+
+.Copyright {
+  padding: 1rem;
+
+  color: var(--white);
+  text-align: center;
+
+  background-color: var(--gray-5);
+}

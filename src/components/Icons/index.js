@@ -1,3 +1,6 @@
+export * from "./IconBars"
+export * from "./IconCheck"
+export * from "./IconClose"
 export * from "./IconEnvelope"
 export * from "./IconGitHub"
 export * from "./IconInstagram"

@@ -10,10 +10,10 @@ export default function SocialIcons({
 }) {
   return (
     <ul className={ulClass}>
-      {socialLinks.map(link => {
+      {socialLinks.map((link, i) => {
         const { Icon } = link
         return (
-          <li className={liClass}>
+          <li className={liClass} key={i}>
             <a
               className={linkClass}
               href={link.url}

@@ -1,7 +1,14 @@
 import * as i from "@components/Icons"
 
+export const businessName = "Frank Luongo Design Co."
 export const emailAddress = "frank@frankluongo.com"
 export const phoneNumber = "570-972-6641"
+export const location = "Philadelphia, PA"
+export const status = {
+  Icon: i.IconCheck,
+  color: "var(--green)",
+  text: "Available for freelance",
+}
 
 export const navLinks = [
   { title: "Home", url: "/" },

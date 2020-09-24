@@ -46,23 +46,20 @@
   margin-right: 1rem;
 }
 
+.HeaderLogoDesktop {
+  fill: var(--white);
+}
+
+.NavWrapper {
+  display: flex;
+  width: 100%;
+}
+
 .HeaderNav {
   flex: 0 1 100%;
 }
 
-.HeaderNavUl {
-  align-items: center;
-  display: flex;
-}
-
-.HeaderNavLi:not(:last-of-type) {
-  margin-right: 2rem;
-}
-
 .HeaderNavLink {
-  position: relative;
-  top: -2px;
-
   color: var(--white);
   text-decoration: none;
 }
@@ -73,7 +70,6 @@
 
 .HeaderSocialUl {
   display: flex;
-  justify-content: flex-end;
 }
 
 .HeaderSocialLi {
@@ -82,6 +78,119 @@
 
 .HeaderSocialIcon {
   height: 1rem;
+}
+
+.CloseButton {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  padding: 1rem;
+
+  appearance: none;
+  background-color: transparent;
+  border: none;
+}
+
+.CloseIcon {
+  height: 1rem;
+}
+
+.OpenButtonWrapper {
+  margin-left: auto;
+}
+
+.OpenButton {
+  --button-size: 1.5rem;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: var(--button-size);
+  height: var(--button-size);
+
+  background-color: transparent;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.OpenIcon {
+  height: 1rem;
 
   fill: var(--white);
+}
+
+@media (max-width: 639px) {
+  .HeaderLogoMobile {
+    padding: 2rem;
+  }
+
+  .HeaderLogoMobileIcon {
+    fill: var(--black);
+  }
+
+  .NavWrapper {
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+
+    background-color: var(--white);
+    transition: transform 150ms ease-in-out;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  .NavWrapper[data-open="true"] {
+    transform: translate3d(0%, 0, 0);
+  }
+
+  .HeaderNav {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .HeaderNavUl {
+    text-align: center;
+  }
+
+  .HeaderNavLi:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
+
+  .HeaderNavLink {
+    color: var(--black);
+  }
+
+  .HeaderSocialUl {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .HeaderLogoMobile,
+  .CloseButton,
+  .OpenButtonWrapper {
+    display: none;
+  }
+
+  .HeaderNavUl {
+    align-items: center;
+    display: flex;
+  }
+  .HeaderNavLi:not(:last-of-type) {
+    margin-right: 2rem;
+  }
+  .HeaderSocialUl {
+    justify-content: flex-end;
+  }
+  .HeaderSocialIcon {
+    fill: var(--white);
+  }
 }

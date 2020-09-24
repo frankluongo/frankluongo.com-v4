@@ -70,7 +70,7 @@
   /* * Theme Settings ------------------- */
   /* ? Container Width */
   --wrapper-width: 88rem;
-  --container-width: 57rem;
+  --container-width: 59rem;
   /* ? Type */
   --primary-font: var(--sans-serif);
   --secondary-font: var(--serif);
