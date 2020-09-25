@@ -1,7 +1,5 @@
 import React from "react"
 
-import Logo from "@components/Logo"
-
 import { location, businessName } from "@constants"
 
 import styles from "./BusinessDetails.module.css"
@@ -9,9 +7,8 @@ import styles from "./BusinessDetails.module.css"
 export default function BusinessDetails() {
   return (
     <div className={styles.BusinessDetails}>
-      <Logo />
-      {businessName}
-      {location}
+      <div className="bold h5">{businessName}</div>
+      <div className="h5">{location}</div>
     </div>
   )
 }

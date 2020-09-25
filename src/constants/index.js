@@ -7,6 +7,7 @@ export const location = "Philadelphia, PA"
 export const status = {
   Icon: i.IconCheck,
   color: "var(--green)",
+  fill: "var(--white)",
   text: "Available for freelance",
 }
 

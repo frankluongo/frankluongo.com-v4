@@ -1,0 +1,10 @@
+.ContactInfo * + * {
+  margin-top: 1rem;
+}
+
+.Link {
+  display: block;
+
+  color: inherit;
+  text-decoration: none;
+}

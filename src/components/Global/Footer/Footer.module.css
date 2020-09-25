@@ -7,6 +7,16 @@
   background-color: var(--black);
 }
 
+.Logo {
+  margin-bottom: 1rem;
+
+  fill: var(--white);
+}
+
+.FooterModule {
+  margin-top: 2rem;
+}
+
 .Copyright {
   padding: 1rem;
 

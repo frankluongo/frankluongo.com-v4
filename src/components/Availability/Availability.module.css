@@ -1,0 +1,31 @@
+.Availability {
+  align-items: center;
+  display: flex;
+}
+
+.IconWrapper {
+  --size: 0.875rem;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: var(--size);
+  margin-right: 0.5rem;
+  width: var(--size);
+
+  border-radius: 50%;
+}
+
+.Icon {
+  --width: 0.625rem;
+
+  width: var(--width);
+}
+
+.Text {
+  position: relative;
+  top: 1px;
+
+  line-height: 1;
+  white-space: nowrap;
+}

@@ -7,7 +7,7 @@ import Logo from "@components/Logo"
 
 import styles from "./Header.module.css"
 import Navigation from "@components/Navigation"
-import SocialIcons from "../../SocialIcons/SocialIcons"
+import SocialIcons from "@components/SocialIcons"
 
 export default function Header() {
   const [open, setOpen] = useState(false)

@@ -1,0 +1,12 @@
+.SiteMapUl {
+  display: flex;
+}
+
+.SiteMapLi:not(:last-of-type) {
+  margin-right: 2rem;
+}
+
+.SiteMapLink {
+  color: var(--white);
+  text-decoration: none;
+}
