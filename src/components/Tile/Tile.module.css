@@ -1,0 +1,36 @@
+.Tile {
+  --padding: 1rem;
+  --text-color: var(--blue);
+  --icon-color: var(--gradient-cool);
+
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding);
+
+  color: var(--text-color);
+
+  background-color: var(--white);
+  box-shadow: var(--tile-shadow);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+
+.Icon {
+  height: 1.5rem;
+
+  fill: currentColor;
+}
+
+.Title {
+  text-align: center;
+}
+
+.Tile:hover,
+.Tile:focus {
+  transform: scale(1.1) rotate(2deg);
+}
+
+.Tile:active {
+  transform: scale(0.9) rotate(2deg);
+}

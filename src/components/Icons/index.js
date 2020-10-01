@@ -1,5 +1,7 @@
 export * from "./IconBars"
 export * from "./IconCheck"
+export * from "./IconChevronDown"
+export * from "./IconChevronRight"
 export * from "./IconClose"
 export * from "./IconEnvelope"
 export * from "./IconGitHub"

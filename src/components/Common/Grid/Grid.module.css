@@ -3,8 +3,39 @@
   gap: 1rem;
 }
 
-@media (min-width: 912px) {
-  .Grid[data-cols="3"] {
+.Grid[data-cols-xs="2"] {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 520px) {
+  .Grid[data-cols-sm="2"] {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Grid[data-cols-sm="3"] {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 740px) {
+  .Grid[data-cols-md="2"] {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Grid[data-cols-md="3"] {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .Grid[data-cols-md="4"] {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 912px) {
+  .Grid[data-cols-lg="2"] {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Grid[data-cols-lg="3"] {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .Grid[data-cols-lg="4"] {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

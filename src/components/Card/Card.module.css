@@ -1,0 +1,59 @@
+.CardWrapper {
+  --vertical-spacing: 1rem;
+  --max-card-width: 13.5rem;
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.Card {
+  --img-border-radius: 0.25rem;
+
+  position: relative;
+
+  display: block;
+  max-width: var(--max-card-width);
+  width: 100%;
+  padding: 1rem;
+
+  color: var(--black);
+
+  background-color: var(--white);
+  border-radius: 0.25rem 0.25rem 1rem 0.25rem;
+  filter: var(--card-shadow);
+}
+
+.Header {
+  align-items: center;
+  display: flex;
+}
+
+.Logo {
+  --logo-size: 1.5rem;
+
+  height: var(--logo-size);
+  margin-right: 0.5rem;
+  width: var(--logo-size);
+
+  background-color: #eee;
+  border-radius: var(--img-border-radius);
+}
+
+.Thumbnail {
+  --thumbnail-size: 12rem;
+
+  height: var(--thumbnail-size);
+
+  background-color: #eee;
+  border-radius: var(--img-border-radius);
+}
+
+.Icon {
+  --icon-size: 0.75rem;
+  bottom: 1rem;
+  position: absolute;
+  right: 1rem;
+
+  height: var(--icon-size);
+}

@@ -17,7 +17,7 @@ export default function Footer() {
       <footer className={styles.Footer}>
         <Container>
           <Logo className={styles.Logo} />
-          <Grid cols="3">
+          <Grid lgCols="3">
             <BusinessDetails />
             <ContactInfo />
             <div className={styles.Availability}>

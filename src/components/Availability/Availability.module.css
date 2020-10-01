@@ -26,6 +26,8 @@
   position: relative;
   top: 1px;
 
+  margin-top: 0;
+
   line-height: 1;
   white-space: nowrap;
 }

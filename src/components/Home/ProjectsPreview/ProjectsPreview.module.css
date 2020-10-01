@@ -1,0 +1,17 @@
+.ProjectsPreview {
+  --vertical-spacing: 2rem;
+}
+
+.PreviewIntro {
+  text-align: center;
+}
+
+.CallToAction {
+  text-align: center;
+}
+
+@media (max-width: 590px) {
+  .TextBreak {
+    display: none;
+  }
+}

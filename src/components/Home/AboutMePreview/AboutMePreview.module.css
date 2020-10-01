@@ -1,0 +1,8 @@
+.AboutMeCol1 {
+}
+
+.AboutMeCol1Content {
+  max-width: var(--max-instagram-width);
+  margin-left: auto;
+  margin-right: auto;
+}

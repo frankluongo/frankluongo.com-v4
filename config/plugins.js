@@ -3,11 +3,14 @@ exports.moduleResolver = {
   options: {
     root: "./src", // <- will be used as a root dir
     aliases: {
-      "@components": "./components", // <- will become ./src/components
-      "@constants": "./constants", // <- will become ./src/components
-      "@global": "./components/Global", // <- will become ./src/components
-      "@helpers": "./helpers", // <- will become ./src/helpers
-      "@hooks": "./hooks", // <- will become ./src/helpers
+      "@components": "./components",
+      "@contact": "./components/Contact",
+      "@constants": "./constants",
+      "@global": "./components/Global",
+      "@lib": "./lib",
+      "@helpers": "./helpers",
+      "@home": "./components/Home",
+      "@hooks": "./hooks",
       static: {
         root: "./public", // <- will used as this alias' root dir
         alias: "./static", // <- will become ./public/static

@@ -55,7 +55,7 @@ export default function KitchenSink() {
             with <ins>inserted</ins> text.
           </p>
           <div style={{ backgroundColor: "var(--black)", padding: "1rem" }}>
-            <a class="on-dark" href="/">
+            <a className="on-dark" href="/">
               This is a link on a dark background
             </a>
           </div>

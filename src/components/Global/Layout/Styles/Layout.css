@@ -9,18 +9,40 @@
 /* * Within the `main` tag */
 /* ? * */
 main * + * {
-  margin-top: 1rem;
+  margin-top: var(--vertical-spacing);
+}
+
+main * > *:first-child {
+  margin-top: 0;
+}
+
+main [data-flex] > * + *,
+main [data-grid] > * + *,
+main [data-no-margin] {
+  margin-top: 0;
+}
+
+main > section {
+  --block-spacing: 2rem;
+  margin-top: 0;
+  padding-bottom: var(--block-spacing);
+  padding-top: var(--block-spacing);
 }
 /* ? a tags */
 main a {
-  --link-color: var(--link-dark);
   position: relative;
 
-  color: var(--link-color);
   text-decoration: none;
+
   transition: all 150ms ease-in-out;
 }
-main a:after {
+
+main a:not([class]) {
+  --link-color: var(--link-dark);
+
+  color: var(--link-color);
+}
+main a:not([class]):after {
   left: 0;
   position: absolute;
   top: 100%;
@@ -34,8 +56,8 @@ main a:after {
   opacity: 0.2;
 }
 
-main a:hover,
-main a:focus {
+main a:not([class]):hover,
+main a:not([class]):focus {
   color: var(--white);
 
   background-color: var(--link-color);
@@ -45,7 +67,7 @@ main a.on-dark {
   --link-color: var(--link-light);
 }
 
-/* * Horizontal Rules */
+/* ? Horizontal Rules */
 
 main hr {
   --vertical-spacing: 2rem;
@@ -57,10 +79,18 @@ main hr {
   margin-top: var(--vertical-spacing);
   padding-bottom: 3px;
   padding-top: 3px;
-  width: 100%;
+  width: calc(100% - 2rem);
   /* Compensate for padding */
-  max-width: calc(var(--container-width) - 2rem);
+  max-width: calc(var(--wrapper-width) - 2rem);
 
   border: none;
   border-top: 2px solid var(--gray-1);
+}
+
+/* ? Lists */
+
+.list {
+  padding-left: 2rem;
+
+  list-style: disc;
 }

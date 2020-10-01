@@ -1,0 +1,65 @@
+.Instagram {
+  --background: var(--gray-1);
+  --padding: 1rem;
+  --radius: 0.25rem;
+
+  width: 100%;
+  max-width: var(--max-instagram-width);
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: var(--background);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.Header {
+  position: relative;
+
+  padding: var(--padding);
+
+  text-align: center;
+}
+
+.Header::before {
+  --background: var(--gradient-cool);
+
+  bottom: 32%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  background: var(--background);
+  content: "";
+}
+
+.PhotoWrapper {
+  position: relative;
+
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.PhotoWrapper * + * {
+  margin-top: 0;
+}
+
+.Feed {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 0;
+  padding: var(--padding);
+  padding-top: 0;
+}
+
+.InstaPhoto {
+  display: block;
+  padding-top: 100%;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: var(--radius);
+}

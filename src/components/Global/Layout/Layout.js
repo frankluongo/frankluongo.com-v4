@@ -12,7 +12,10 @@ export default function Layout({ children }) {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main>
+        {children}
+        <hr />
+      </main>
       <Footer />
     </>
   )

@@ -1,0 +1,63 @@
+.SplashWrapper {
+  position: relative;
+}
+
+.SplashHeader {
+  --text-color: var(--black);
+
+  padding-top: 1rem;
+
+  color: var(--text-color);
+  text-align: center;
+}
+
+.Icon {
+  --margin: 0.5rem;
+  height: 1rem;
+  margin: var(--margin) 0;
+
+  fill: currentColor;
+}
+
+.Splash {
+  --spacing: 1rem;
+  position: relative;
+  z-index: 2;
+
+  max-width: var(--wrapper-width);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  padding: var(--spacing);
+  width: calc(100% - var(--spacing));
+}
+
+.SplashContainer {
+  position: relative;
+}
+
+.SplashBg {
+  bottom: 50%;
+  left: 0;
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+
+  content: "";
+}
+
+@media (min-width: 88rem) {
+  .Splash {
+    --spacing: 2rem;
+    margin-top: -2rem;
+  }
+  .SplashHeader {
+    --text-color: var(--white);
+    left: 50%;
+    position: absolute;
+    bottom: 100%;
+
+    transform: translateX(-50%);
+  }
+}

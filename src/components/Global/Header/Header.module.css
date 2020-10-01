@@ -1,5 +1,10 @@
 .Header {
-  position: relative;
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+
+  width: 100%;
 
   padding-bottom: 1rem;
   padding-top: 1rem;
@@ -130,7 +135,7 @@
   }
 
   .NavWrapper {
-    left: 0;
+    left: 100%;
     position: fixed;
     top: 0;
     z-index: 2;
@@ -143,11 +148,10 @@
 
     background-color: var(--white);
     transition: transform 150ms ease-in-out;
-    transform: translate3d(100%, 0, 0);
   }
 
   .NavWrapper[data-open="true"] {
-    transform: translate3d(0%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
 
   .HeaderNav {

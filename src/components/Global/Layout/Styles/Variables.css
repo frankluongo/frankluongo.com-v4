@@ -54,6 +54,9 @@
   --gradient-alt: linear-gradient(180deg, var(--teal) 0%, var(--green) 100%);
   --gradient-warm: linear-gradient(180deg, var(--red) 0%, var(--yellow) 100%);
   --gradient-cool: linear-gradient(180deg, var(--teal) 0%, var(--blue) 100%);
+  /* * Shadows */
+  --card-shadow: drop-shadow(0px 1px 4px rgba(39, 35, 33, 0.1));
+  --tile-shadow: 0px 1px 4px rgba(39, 35, 33, 0.1);
   /* * Typography ------------------- */
   --sans-serif: "Silka Web", sans-serif;
   --serif: "Knile Web", serif;
@@ -68,9 +71,10 @@
   --small: 0.625em;
 
   /* * Theme Settings ------------------- */
-  /* ? Container Width */
-  --wrapper-width: 88rem;
+  /* ? Container Widths */
+  --wrapper-width: 86rem;
   --container-width: 59rem;
+  --max-instagram-width: 30rem;
   /* ? Type */
   --primary-font: var(--sans-serif);
   --secondary-font: var(--serif);
@@ -81,4 +85,6 @@
   --subtext-dark: var(--gray-3);
   --subtext-light: var(--gray-1);
   --text-white: var(--white);
+  /* ? Spacing */
+  --vertical-spacing: 1rem;
 }

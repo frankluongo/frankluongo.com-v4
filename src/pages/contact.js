@@ -1,5 +1,16 @@
 import React from "react"
 
-export default function Contact() {
-  return <div></div>
+import Layout from "@global/Layout"
+import ContactHero from "@contact/ContactHero"
+import ContactSplash from "@contact/ContactSplash"
+
+const IndexPage = () => {
+  return (
+    <Layout>
+      <ContactHero />
+      <ContactSplash />
+    </Layout>
+  )
 }
+
+export default IndexPage

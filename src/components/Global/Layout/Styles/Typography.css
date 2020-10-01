@@ -7,6 +7,8 @@ body,
 input,
 button {
   font-family: var(--primary-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 /* * Sizing ================= */
 h1,
@@ -55,8 +57,21 @@ small,
 /* * Line Height ================= */
 
 p,
-.p {
+.p,
+.list li {
   line-height: 1.619;
+}
+
+/* * Margins & Spacing ================= */
+
+h1 {
+  margin: 0;
+}
+
+p,
+h2,
+h3 {
+  margin-bottom: inherit;
 }
 
 /* * Helper Classes ================= */
@@ -73,6 +88,9 @@ p,
 .black {
   font-weight: 900;
   letter-spacing: 1px;
+}
+.italic {
+  font-style: italic;
 }
 .uppercase {
   text-transform: uppercase;
