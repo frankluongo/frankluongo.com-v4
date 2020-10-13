@@ -1,0 +1,23 @@
+.CheckBoxGroup {
+  position: relative;
+
+  display: block;
+  padding: 0.5rem;
+  margin-top: 1.5rem;
+
+  border: 1px solid var(--gray-1);
+  border-radius: 0.25rem;
+}
+
+.Title {
+  left: 0;
+  position: absolute;
+  top: 0;
+
+  padding-bottom: 1px;
+  padding-left: 1px;
+  padding-right: 0.5rem;
+
+  background-color: var(--white);
+  transform: translateY(-50%);
+}

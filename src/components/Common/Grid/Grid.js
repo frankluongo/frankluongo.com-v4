@@ -2,7 +2,7 @@ import React from "react"
 
 import styles from "./Grid.module.css"
 
-export function Grid({ xsCols, smCols, mdCols, lgCols, children }) {
+export function Grid({ xsCols, smCols, mdCols, lgCols, children, ...props }) {
   return (
     <section
       className={styles.Grid}
@@ -11,6 +11,7 @@ export function Grid({ xsCols, smCols, mdCols, lgCols, children }) {
       data-cols-md={mdCols}
       data-cols-lg={lgCols}
       data-grid
+      {...props}
     >
       {children}
     </section>

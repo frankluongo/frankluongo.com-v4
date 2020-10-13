@@ -9,10 +9,12 @@ export default function KitchenSink() {
         <hgroup>
           <h1>h1 HTML5 Kitchen Sink</h1>
           <h2>
-            h2 Back in my quaint <a href="#">garden</a>
+            h2 Back in my quaint{" "}
+            <a href="https://www.w3schools.com/tags/">garden</a>
           </h2>
           <h3>
-            h3 Jaunty <a href="#">zinnias</a> vie with flaunting phlox
+            h3 Jaunty <a href="https://www.w3schools.com/tags/">zinnias</a> vie
+            with flaunting phlox
           </h3>
           <h4>
             h4 Five or six big jet planes zoomed quickly by the new tower.
@@ -30,13 +32,13 @@ export default function KitchenSink() {
           <nav>
             <ul>
               <li>
-                <a href="#">Home</a>
+                <a href="https://www.w3schools.com/tags/">Home</a>
               </li>
               <li>
-                <a href="#">About</a>
+                <a href="https://www.w3schools.com/tags/">About</a>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <a href="https://www.w3schools.com/tags/">Contact</a>
               </li>
             </ul>
           </nav>
@@ -55,7 +57,7 @@ export default function KitchenSink() {
             with <ins>inserted</ins> text.
           </p>
           <div style={{ backgroundColor: "var(--black)", padding: "1rem" }}>
-            <a className="on-dark" href="/">
+            <a className="on-dark" href="https://www.w3schools.com/tags/">
               This is a link on a dark background
             </a>
           </div>
@@ -111,7 +113,7 @@ export default function KitchenSink() {
             </tr>
             <tr>
               <td>
-                <a href="#">Person Name</a>
+                <a href="https://www.w3schools.com/tags/">Person Name</a>
               </td>
               <td>1200</td>
               <td>
@@ -234,7 +236,7 @@ export default function KitchenSink() {
       <hr />
       <Container>
         <figure>
-          <img src="https://www.fillmurray.com/505/314" />
+          <img src="https://www.fillmurray.com/505/314" alt="Bill Murray" />
           <figcaption>
             Fig1. A picture of Bill Murray from{" "}
             <a href="https://www.fillmurray.com/">fillmurray.com</a>
@@ -245,7 +247,7 @@ export default function KitchenSink() {
       <Container>
         <form>
           <p>
-            <label for="example-input-email">Email address</label>
+            <label htmlFor="example-input-email">Email address</label>
             <input
               type="email"
               id="example-input-email"
@@ -253,7 +255,7 @@ export default function KitchenSink() {
             />
           </p>
           <p>
-            <label for="example-input-password1">Number</label>
+            <label htmlFor="example-input-password1">Number</label>
             <input
               type="number"
               id="example-input-number"
@@ -261,7 +263,7 @@ export default function KitchenSink() {
             />
           </p>
           <p>
-            <label for="example-input-password">Password</label>
+            <label htmlFor="example-input-password">Password</label>
             <input
               type="password"
               id="example-input-password"
@@ -269,7 +271,7 @@ export default function KitchenSink() {
             />
           </p>
           <p>
-            <label for="example-input-search">Search</label>
+            <label htmlFor="example-input-search">Search</label>
             <input
               type="search"
               id="example-input-serach"
@@ -277,7 +279,7 @@ export default function KitchenSink() {
             />
           </p>
           <p>
-            <label for="example-input-tel">Telephone number</label>
+            <label htmlFor="example-input-tel">Telephone number</label>
             <input
               type="tel"
               id="example-input-tel"
@@ -286,7 +288,7 @@ export default function KitchenSink() {
           </p>
 
           <p>
-            <label for="example-input-text">Text</label>
+            <label htmlFor="example-input-text">Text</label>
             <input
               type="text"
               id="example-input-text"
@@ -294,7 +296,7 @@ export default function KitchenSink() {
             />
           </p>
           <p>
-            <label for="example-input-url">Url</label>
+            <label htmlFor="example-input-url">Url</label>
             <input
               type="url"
               id="example-input-url"
@@ -302,15 +304,15 @@ export default function KitchenSink() {
             />
           </p>
           <p>
-            <label for="example-input-color">Color</label>
+            <label htmlFor="example-input-color">Color</label>
             <input type="color" id="example-inupt-color" placeholder="#fff" />
           </p>
           <p>
-            <label for="example-input-date">Date</label>
+            <label htmlFor="example-input-date">Date</label>
             <input type="date" id="example-input-date" placeholder="date" />
           </p>
           <p>
-            <label for="example-input-date-time">Date / Time</label>
+            <label htmlFor="example-input-date-time">Date / Time</label>
             <input
               type="datetime"
               id="example-input-date-time"
@@ -318,7 +320,9 @@ export default function KitchenSink() {
             />
           </p>
           <p>
-            <label for="example-input-date-time-local">Date / Time local</label>
+            <label htmlFor="example-input-date-time-local">
+              Date / Time local
+            </label>
             <input
               type="datetime-local"
               id="example-input-date-time-local"
@@ -326,19 +330,19 @@ export default function KitchenSink() {
             />
           </p>
           <p>
-            <label for="example-input-month">Month</label>
+            <label htmlFor="example-input-month">Month</label>
             <input type="month" id="example-input-month" placeholder="Month" />
           </p>
           <p>
-            <label for="example-input-week">Week</label>
+            <label htmlFor="example-input-week">Week</label>
             <input type="week" id="example-input-week" placeholder="Week" />
           </p>
           <p>
-            <label for="example-input-time">Time</label>
+            <label htmlFor="example-input-time">Time</label>
             <input type="time" id="example-input-time" placeholder="Time" />
           </p>
           <p>
-            <label for="example-select1">Example select</label>
+            <label htmlFor="example-select1">Example select</label>
             <select id="example-select1">
               <option>1</option>
               <option>2</option>
@@ -348,7 +352,7 @@ export default function KitchenSink() {
             </select>
           </p>
           <p>
-            <label for="example-select2">Example multiple select</label>
+            <label htmlFor="example-select2">Example multiple select</label>
             <select multiple id="example-select2">
               <option>1</option>
               <option>2</option>
@@ -358,11 +362,11 @@ export default function KitchenSink() {
             </select>
           </p>
           <p>
-            <label for="example-textarea">Example textarea</label>
+            <label htmlFor="example-textarea">Example textarea</label>
             <textarea id="example-textarea" rows="3"></textarea>
           </p>
           <p>
-            <label for="example-input-file">File input</label>
+            <label htmlFor="example-input-file">File input</label>
             <input type="file" id="example-input-file" />
           </p>
           <fieldset>

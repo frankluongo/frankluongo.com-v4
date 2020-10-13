@@ -29,7 +29,9 @@ export default function Instagram() {
                 rel="noopener noreferrer"
                 style={{ backgroundImage: `url(${node.thumbnail_src})` }}
                 aria-label="Check me out on Instagram"
-              />
+              >
+                <span className="visually-hidden">View Instagram Post</span>
+              </a>
             </li>
           )
         })}

@@ -24,6 +24,12 @@
   filter: var(--card-shadow);
 }
 
+.Card:hover,
+.Card:focus {
+  transform: scale(1.1) rotate(-1deg);
+  z-index: 2;
+}
+
 .Header {
   align-items: center;
   display: flex;

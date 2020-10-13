@@ -19,7 +19,7 @@
   fill: currentColor;
 }
 
-.Splash {
+main .Splash {
   --spacing: 1rem;
   position: relative;
   z-index: 2;
@@ -27,7 +27,7 @@
   max-width: var(--wrapper-width);
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0;
+  margin-top: 0.5rem;
   padding: var(--spacing);
   width: calc(100% - var(--spacing));
 }
@@ -47,8 +47,8 @@
   content: "";
 }
 
-@media (min-width: 88rem) {
-  .Splash {
+@media (min-width: 75rem) {
+  main .Splash {
     --spacing: 2rem;
     margin-top: -2rem;
   }

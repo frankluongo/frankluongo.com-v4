@@ -1,0 +1,27 @@
+.Checkbox {
+  align-items: center;
+  display: flex;
+}
+
+.Checkbox + .Checkbox {
+  margin-top: 0.5rem;
+}
+
+.Checkbox,
+.Input,
+.Label {
+  cursor: pointer;
+}
+
+.Input {
+  margin-right: 0.25rem;
+}
+
+.Input:checked + .Label {
+  font-weight: bold;
+}
+
+.Label {
+  position: relative;
+  top: -1px;
+}

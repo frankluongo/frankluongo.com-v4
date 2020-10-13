@@ -11,6 +11,29 @@ export const status = {
   fill: "var(--white)",
   text: "Available for freelance",
 }
+// FILTERS
+export const types = [
+  { id: "client-work", name: "client-work", title: "Client Work" },
+  { id: "for-fun", name: "for-fun", title: "Just For Fun" },
+]
+export const tech = [
+  { id: "gatsby", name: "gatsby", title: "Gatsby" },
+  { id: "graphql", name: "graphql", title: "GraphQL" },
+  { id: "react", name: "react", title: "React" },
+  { id: "sass", name: "sass", title: "Sass" },
+  { id: "shopify", name: "shopify", title: "Shopify" },
+  { id: "squarespace", name: "squarespace", title: "Squarespace" },
+  { id: "webpack", name: "webpack", title: "Webpack" },
+  { id: "wordpress", name: "wordpress", title: "WordPress" },
+]
+export const work = [
+  { id: "design", name: "design", title: "Design" },
+  { id: "development", name: "development", title: "Development" },
+]
+export const tags = [
+  { id: "personal", name: "personal", title: "Personal" },
+  { id: "weekly-notes", name: "weekly-notes", title: "Weekly Notes" },
+]
 // INSTAGRAM
 export const PHOTOS = "photos"
 export const TIME = "currentTime"

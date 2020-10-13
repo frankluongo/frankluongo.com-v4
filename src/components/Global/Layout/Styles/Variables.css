@@ -5,6 +5,12 @@
 }
 @font-face {
   font-family: "Silka Web";
+  src: url("../../../../fonts/silka-regularitalic-webfont.woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Silka Web";
   src: url("../../../../fonts/silka-bold-webfont.woff2");
   font-weight: 600;
 }
@@ -46,11 +52,7 @@
   --gray-5: #413f3e;
   --black: #272321;
 
-  --gradient-grayscale: linear-gradient(
-    180deg,
-    var(--gray-1) 0%,
-    var(--white) 100%
-  );
+  --gradient-gray: linear-gradient(180deg, var(--gray-1) 0%, var(--white) 100%);
   --gradient-alt: linear-gradient(180deg, var(--teal) 0%, var(--green) 100%);
   --gradient-warm: linear-gradient(180deg, var(--red) 0%, var(--yellow) 100%);
   --gradient-cool: linear-gradient(180deg, var(--teal) 0%, var(--blue) 100%);
@@ -75,6 +77,7 @@
   --wrapper-width: 86rem;
   --container-width: 59rem;
   --max-instagram-width: 30rem;
+  --max-text-width: 42.5rem;
   /* ? Type */
   --primary-font: var(--sans-serif);
   --secondary-font: var(--serif);

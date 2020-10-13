@@ -3,6 +3,10 @@
   gap: 1rem;
 }
 
+.Grid[data-align-center] {
+  align-items: center;
+}
+
 .Grid[data-cols-xs="2"] {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -17,6 +21,13 @@
 }
 
 @media (min-width: 740px) {
+  .Grid[data-cols-md="3/1"] {
+    grid-template-columns: 3fr 1fr;
+  }
+  .Grid[data-cols-md="4/2"] {
+    grid-template-columns: 4fr 2fr;
+  }
+
   .Grid[data-cols-md="2"] {
     grid-template-columns: repeat(2, 1fr);
   }

@@ -1,0 +1,65 @@
+.ArticleCard {
+  display: block;
+  padding: 1rem;
+
+  color: var(--black);
+
+  background-color: var(--white);
+
+  filter: var(--card-shadow);
+  transition: all 150ms ease-in-out;
+}
+
+.ArticleCard:hover,
+.ArticleCard:focus {
+  transform: scale(1.1) rotate(-1deg);
+}
+
+.Header {
+  align-items: center;
+  display: flex;
+}
+
+.Thumbnail {
+  --size: 3rem;
+
+  height: var(--size);
+  width: var(--size);
+
+  background-color: #eee;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.Headline {
+  margin-left: 1rem;
+}
+
+.Title {
+  margin-top: 0.5rem;
+}
+
+.Dateline {
+  color: var(--gray-3);
+}
+
+.Tags {
+  display: flex;
+}
+
+.Tag {
+  position: relative;
+
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.Tag:not(:last-of-type):after {
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  border-right: 1px solid var(--black);
+  content: "";
+}

@@ -3,12 +3,15 @@ import { Link } from "gatsby"
 
 import Card from "@components/Card"
 import Splash from "@components/Splash"
+import { useProjects } from "@lib"
 
 import { Button, Grid } from "@components/Common"
 
 import styles from "./ProjectsPreview.module.css"
 
 export default function ProjectsPreview() {
+  const projects = useProjects();
+  const projectsList = projects.slice(0, 4);
   return (
     <Splash
       style={{ backgroundColor: "var(--yellow)" }}
@@ -23,13 +26,10 @@ export default function ProjectsPreview() {
           <Link to="/projects">Projects Page</Link> to see it all.
         </p>
         <Grid smCols="2" mdCols="3" lgCols="4">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+        {projectsList.map(project => <Card {...project} key={project.id} />)}
         </Grid>
         <div className={styles.CallToAction}>
-          <Button Tag={Link} data-theme="dark">
+          <Button Tag={Link} data-theme="dark" to="/projects">
             See 'Em All
           </Button>
         </div>

@@ -48,7 +48,7 @@ export default function Guide() {
           <ColorSwatch background="var(--gradient-warm)" title="Warm" />
           <ColorSwatch background="var(--gradient-alt)" title="Alt" />
           <ColorSwatch
-            background="var(--gradient-grayscale)"
+            background="var(--gradient-gray)"
             title="Grayscale"
           />
         </Tray>

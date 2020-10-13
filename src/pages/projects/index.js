@@ -1,5 +1,16 @@
 import React from "react"
 
-export default function ProjectsIndex() {
-  return <div>does this work?</div>
+import Layout from "@global/Layout"
+import ProjectsHero from "@projects/ProjectsHero"
+import ProjectsSplash from "@projects/ProjectsSplash"
+
+const BlogIndex = () => {
+  return (
+    <Layout>
+      <ProjectsHero />
+      <ProjectsSplash />
+    </Layout>
+  )
 }
+
+export default BlogIndex

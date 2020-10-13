@@ -1,0 +1,22 @@
+.Post {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--max-text-width);
+}
+
+.Post p:first-child {
+  font-size: 1.5em;
+}
+
+.CallToAction {
+  margin-top: 4rem;
+
+  text-align: center;
+}
+
+.Post h2,
+.Post h3,
+.Post h4 {
+  --vertical-spacing: 2rem;
+  font-weight: bold;
+}

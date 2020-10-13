@@ -18,7 +18,7 @@ export default function ContactHero() {
       }}
       headline={
         <>
-          <span class="bold">Hey,</span> what's up? Hello!
+          <span className="bold">Hey,</span> what's up? Hello!
         </>
       }
       strapline="Want to get to know me a little better and get started on your project? Well, then, let’s just jump into it!"

@@ -1,20 +1,20 @@
 import React from "react"
+import BackgroundImage from "gatsby-background-image"
 
 import styles from "./Card.module.css"
 
 import { IconChevronRight } from "@components/Icons"
 
-export default function Card({ url, heading, title, categories }) {
+export default function Card({ url, heading, title, thumbnail, feature }) {
   return (
     <div className={styles.CardWrapper}>
       <a className={styles.Card} href={url}>
         <header className={styles.Header} data-flex>
-          <div className={styles.Logo} />
+          <BackgroundImage className={styles.Logo} Tag="div" fluid={thumbnail}  />
           <span className="h6">{heading}</span>
         </header>
-        <figure className={styles.Thumbnail}></figure>
+        <BackgroundImage className={styles.Thumbnail} Tag="figure" fluid={feature} />
         <section className="h5">{title}</section>
-        <section className="small">{categories}</section>
         <IconChevronRight className={styles.Icon} />
       </a>
     </div>

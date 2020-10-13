@@ -85,7 +85,8 @@ h3 {
 .bold {
   font-weight: 600;
 }
-.black {
+.black,
+strong {
   font-weight: 900;
   letter-spacing: 1px;
 }

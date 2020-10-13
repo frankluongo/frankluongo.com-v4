@@ -42,7 +42,6 @@ Hero.defaultProps = {
       <span className="bold">Oh, Hello!</span> I'm Frank Luongo.
     </>
   ),
-  strapline: "Your friendly internet web developer",
   showAvailability: true,
   button: null,
   image: "http://www.fillmurray.com/1920/1080",

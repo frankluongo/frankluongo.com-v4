@@ -21,6 +21,7 @@ const IndexPage = () => {
             href: `mailto:${emailAddress}`,
           },
         }}
+        strapline="Your friendly internet web developer"
       />
       <ProjectsPreview />
       <hr />
