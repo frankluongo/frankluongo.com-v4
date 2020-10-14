@@ -30,5 +30,20 @@ export function useBlogPosts() {
   if (!data?.allMdx?.edges) {
     throw new Error("no posts found")
   }
-  return data?.allMdx?.edges
+  const formattedPosts = formatPosts(data?.allMdx?.edges);
+  return formattedPosts
+
+  function formatPosts(posts) {
+    return posts.map(formatPost);
+  }
+
+  function formatPost(post) {
+    const { frontmatter, id } = post.node;
+    const tags = frontmatter.tags.replace(/\s/g, "").split(",")
+    return {
+      frontmatter,
+      tags,
+      id
+    }
+  }
 }

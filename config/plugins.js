@@ -7,6 +7,7 @@ exports.moduleResolver = {
       "@components": "./components",
       "@contact": "./components/Contact",
       "@constants": "./constants",
+      "@context": "./context",
       "@global": "./components/Global",
       "@lib": "./lib",
       "@helpers": "./helpers",

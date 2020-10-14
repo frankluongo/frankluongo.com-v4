@@ -1,23 +1,28 @@
 import React from "react"
 
 import { useBlogPosts } from "@lib"
+import { useFiltersContext } from "@context"
+import { useFilter } from "@hooks"
 
 import ArticleCard from "@components/ArticleCard"
 
 export default function BlogArticles() {
+  const { activeFilters } = useFiltersContext();
   const posts = useBlogPosts()
+  const postsList = useFilter({ activeFilters, itemsList: posts, value: 'tags' });
+
   return (
     <>
       <header>
         <h2>
           <span className="black">Articles & Whatnot</span>&nbsp;
-          <span>(43)</span>
+          <span>({posts.length})</span>
         </h2>
       </header>
       <ul>
-        {posts.map(post => (
-          <li key={post.node.id}>
-            <ArticleCard post={post.node} />
+        {postsList.map(post => (
+          <li key={post.id}>
+            <ArticleCard post={post} />
           </li>
         ))}
       </ul>

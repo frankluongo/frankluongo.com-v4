@@ -25,7 +25,7 @@ export default function ArticleCard({ post }) {
       <ul className={`${styles.Tags} small`} data-flex>
         <span className="uppercase black">Tags:</span>
         {tagsArray.map(tag => (
-          <li className={styles.Tag}>{tag}</li>
+          <li className={styles.Tag} key={tag} >{tag}</li>
         ))}
       </ul>
     </Link>

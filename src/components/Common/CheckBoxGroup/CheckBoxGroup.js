@@ -11,7 +11,7 @@ export function CheckBoxGroup({ singleSelect, options, title, callback }) {
       <legend className={`${styles.Title} h5 black`}>{title}</legend>
       {options.map(option => {
         const input = { ...option, type }
-        return <Checkbox key={option.id} {...input} />
+        return <Checkbox key={option.id} {...input} onChange={callback} />
       })}
     </fieldset>
   )

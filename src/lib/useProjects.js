@@ -128,9 +128,7 @@ twwcFeatImage
       heading: 'Alicia Stepp Photography',
       title: 'Alicia Stepp Photography Website',
       url: '/projects/alicia-stepp-photography',
-      type: ['Client Work'],
-      tech: ['React', 'Sass', 'Squarespace', 'Webpack', 'WordPress'],
-      included: ['Development']
+      tags: ['Client Work', 'React', 'Sass', 'Squarespace', 'Webpack', 'WordPress', 'Development'],
     },
     {
       thumbnail: blreLogo.childImageSharp.fluid,
@@ -139,9 +137,7 @@ twwcFeatImage
       heading: 'Brotherly Love Real Estate',
       title: 'Brotherly Love Real Estate Website',
       url: '/projects/brotherly-love-real-estate',
-      type: ['Client Work'],
-      tech: ['Gatsby', 'GraphQL', 'React', 'Sass', 'Webpack', 'WordPress'],
-      included: ['Design', 'Development']
+      tags: ['Client Work', 'Gatsby', 'GraphQL', 'React', 'Sass', 'Webpack', 'WordPress', 'Design', 'Development'],
     },
     {
       thumbnail: amjLogo.childImageSharp.fluid,
@@ -150,9 +146,7 @@ twwcFeatImage
       heading: 'Angela Monaco Jewelry',
       title: 'Angela Monaco Jewelry Website',
       url: '/projects/angela-monaco-jewelry',
-      type: ['Client Work'],
-      tech: ['Sass', 'Shopify', 'Webpack'],
-      included: ['Development']
+      tags: ['Client Work', 'Sass', 'Shopify', 'Webpack', 'Development'],
     },
     {
       thumbnail: jaiLogo.childImageSharp.fluid,
@@ -161,9 +155,7 @@ twwcFeatImage
       heading: 'Jewelry Appraisals, Inc.',
       title: 'Jewelry Appraisals, Inc. Website',
       url: '/projects/jewelry-appraisals-inc',
-      type: ['Client Work'],
-      tech: ['Sass', 'WordPress'],
-      included: ['Design', 'Development']
+      tags: ['Client Work', 'Sass', 'WordPress', 'Design', 'Development'],
     },
     {
       thumbnail: loresLogo.childImageSharp.fluid,
@@ -172,9 +164,7 @@ twwcFeatImage
       heading: 'Lore\'s Chocolates',
       title: 'Lore\'s Chocolates Website',
       url: '/projects/lores-chocolates',
-      type: ['Client Work'],
-      tech: ['Webpack', 'WordPress'],
-      included: ['Development']
+      tags: ['Client Work', 'Webpack', 'WordPress', 'Development'],
     },
     {
       thumbnail: mnsfLogo.childImageSharp.fluid,
@@ -183,9 +173,7 @@ twwcFeatImage
       heading: 'M. Night Shymalan Foundation',
       title: 'M. Night Shymalan Foundation Website',
       url: '/projects/mnsfoundation',
-      type: ['Client Work'],
-      tech: ['Sass', 'Webpack', 'WordPress'],
-      included: ['Development']
+      tags: ['Client Work', 'Sass', 'Webpack', 'WordPress', 'Development'],
     },
     {
       thumbnail: twwcLogo.childImageSharp.fluid,
@@ -194,9 +182,7 @@ twwcFeatImage
       heading: 'Twin Waves Wellness',
       title: 'Twin Waves Wellness Website',
       url: '/projects/twin-waves-wellness',
-      type: ['Client Work'],
-      tech: ['Gatsby', 'GraphQL', 'React', 'Sass', 'Webpack', 'WordPress'],
-      included: ['Design', 'Development']
+      tags: ['Client Work', 'Gatsby', 'GraphQL', 'React', 'Sass', 'Webpack', 'WordPress', 'Design', 'Development'],
     },
   ];
 }

@@ -3,14 +3,17 @@ import React from "react"
 import Layout from "@global/Layout"
 import ProjectsHero from "@projects/ProjectsHero"
 import ProjectsSplash from "@projects/ProjectsSplash"
+import { FiltersProvider } from "@context"
 
-const BlogIndex = () => {
+const ProjectsIndex = () => {
   return (
-    <Layout>
-      <ProjectsHero />
-      <ProjectsSplash />
-    </Layout>
+    <FiltersProvider>
+      <Layout>
+        <ProjectsHero />
+        <ProjectsSplash />
+      </Layout>
+    </FiltersProvider>
   )
 }
 
-export default BlogIndex
+export default ProjectsIndex

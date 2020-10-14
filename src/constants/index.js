@@ -32,7 +32,9 @@ export const work = [
 ]
 export const tags = [
   { id: "personal", name: "personal", title: "Personal" },
+  { id: "productivity", name: "productivity", title: "Productivity" },
   { id: "weekly-notes", name: "weekly-notes", title: "Weekly Notes" },
+  { id: "work", name: "work", title: "Work" },
 ]
 // INSTAGRAM
 export const PHOTOS = "photos"
