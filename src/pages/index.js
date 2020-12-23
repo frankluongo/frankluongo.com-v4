@@ -1,6 +1,7 @@
 import React from "react"
 
 import Layout from "@global/Layout"
+import Seo from "@global/Seo"
 import Hero from "@components/Hero"
 
 import { useHomeImage } from "@lib"
@@ -13,6 +14,7 @@ const IndexPage = () => {
   const image = useHomeImage()
   return (
     <Layout>
+      <Seo title="Home" />
       <Hero
         image={image}
         button={{

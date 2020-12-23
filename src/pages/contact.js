@@ -1,16 +1,20 @@
 import React from "react"
 
+import Seo from "@global/Seo"
 import Layout from "@global/Layout"
 import ContactHero from "@contact/ContactHero"
 import ContactSplash from "@contact/ContactSplash"
 
-const IndexPage = () => {
+const ContactPage = () => {
   return (
-    <Layout>
-      <ContactHero />
-      <ContactSplash />
-    </Layout>
+    <>
+      <Seo title="Get In Touch" />
+      <Layout>
+        <ContactHero />
+        <ContactSplash />
+      </Layout>
+    </>
   )
 }
 
-export default IndexPage
+export default ContactPage

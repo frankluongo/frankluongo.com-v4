@@ -3,6 +3,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import { graphql } from "gatsby"
 
 import Layout from "@global/Layout"
+import Seo from "@global/Seo"
 import Hero from "@components/Hero"
 import Splash from "@components/Splash"
 
@@ -13,6 +14,7 @@ export default function SinglePost({ data }) {
   const { body, frontmatter } = data.mdx
   return (
     <Layout>
+      <Seo title={frontmatter.title} />
       <Hero
         image={image}
         headline={<span className="bold">{frontmatter.title}</span>}
