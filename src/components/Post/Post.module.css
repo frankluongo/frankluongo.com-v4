@@ -20,3 +20,17 @@
   --vertical-spacing: 2rem;
   font-weight: bold;
 }
+
+.Post pre {
+  padding: 2rem;
+
+  color: var(--white);
+
+  background-color: var(--black);
+  border-radius: 0.5rem;
+}
+
+.Post code {
+  font-family: monospace;
+  font-size: 1.25rem;
+}
