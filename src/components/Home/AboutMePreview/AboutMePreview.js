@@ -1,12 +1,26 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
-import Instagram from "@components/Instagram"
 import { Button, Wrapper, Container, Grid } from "@components/Common"
 import { emailAddress } from "@constants"
 
 import styles from "./AboutMePreview.module.css"
 
 export default function AboutMePreview() {
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "aboutme-background.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 640) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+  const fluid = data?.file?.childImageSharp?.fluid
+
   return (
     <Wrapper>
       <Container>
@@ -49,7 +63,7 @@ export default function AboutMePreview() {
             </div>
           </div>
           <div>
-            <Instagram />
+            <Img fluid={fluid} />
           </div>
         </Grid>
       </Container>

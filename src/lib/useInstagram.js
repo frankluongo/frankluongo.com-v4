@@ -17,12 +17,16 @@ export function useInstagram() {
 
     async function getPhotos() {
       if (!storedPhotos || hasBeenAnHour) {
-        const res = await fetch(FEED)
-        const { data } = await res.json()
-        const cleanPhotos = cleanPhotosData(data)
-        localStorage.setItem(PHOTOS, JSON.stringify(cleanPhotos))
-        localStorage.setItem(TIME, Date.now())
-        setPhotos(cleanPhotos)
+        try {
+          const res = await fetch(FEED)
+          const { data } = await res.json()
+          const cleanPhotos = cleanPhotosData(data)
+          localStorage.setItem(PHOTOS, JSON.stringify(cleanPhotos))
+          localStorage.setItem(TIME, Date.now())
+          setPhotos(cleanPhotos)
+        } catch(e) {
+          console.log(e);
+        }
       } else {
         setPhotos(storedPhotos)
       }
