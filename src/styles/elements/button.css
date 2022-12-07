@@ -1,0 +1,42 @@
+.button {
+  --button-bg: var(--color-white);
+  --button-color: var(--color-teal);
+  --button-padding: 1rem 1.5rem;
+  --button-transition-speed: 150ms;
+  --button-transition-type: ease-in-out;
+
+  appearance: none;
+
+  font-weight: bold;
+  font-size: var(--fs-14);
+  text-align: center;
+  text-decoration: none;
+
+  border-radius: 3px;
+  cursor: pointer;
+  transition: color var(--button-transition-speed) var(--button-transition-type),
+    background var(--button-transition-speed) var(--button-transition-type);
+}
+
+.button\:default {
+  padding: var(--button-padding);
+}
+
+.button\:naked {
+  background: transparent;
+  border: none;
+}
+
+.button\:teal {
+  --button-bg: var(--color-teal);
+  --button-color: var(--color-white);
+
+  color: var(--button-color);
+
+  background: var(--button-bg);
+}
+
+[data-is-touch="false"] .button\:teal:hover,
+[data-is-touch="false"] .button\:teal:focus {
+  --button-bg: var(--color-blue);
+}

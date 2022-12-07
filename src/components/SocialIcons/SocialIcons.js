@@ -1,6 +1,6 @@
 import React from "react"
 
-import { socialLinks } from "@constants"
+import { socialLinks } from "#utils/constants"
 
 export default function SocialIcons({
   ulClass,

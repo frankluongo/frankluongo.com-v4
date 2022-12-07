@@ -1,6 +1,6 @@
 import React from "react"
 
-import styles from "./Tile.module.css"
+import * as styles from "./Tile.module.css"
 
 export default function Tile({ content }) {
   const { Icon, tileTitle, url } = content

@@ -1,6 +1,6 @@
 import React from "react"
 
-import styles from "./Button.module.css"
+import * as styles from "./Button.module.css"
 
 export function Button({ Tag, children, ...props }) {
   return (

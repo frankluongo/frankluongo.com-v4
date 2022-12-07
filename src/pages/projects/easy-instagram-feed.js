@@ -1,19 +1,18 @@
 import React from "react"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 
-import Seo from "@global/Seo"
-import { useBlreImages } from "@lib"
-import { Grid } from "@components/Common"
-import Splash from "@components/Splash"
-import Layout from "@global/Layout"
-import Hero from "@components/Hero"
+import Seo from "#global/Seo"
+import { useBlreImages } from "#lib"
+import { Grid } from "#components/Common"
+import Splash from "#components/Splash"
+import Hero from "#components/Hero"
 
-import MainContent from "@project/MainContent"
+import MainContent from "#project/MainContent"
 
 export default function EasyInstagramFeed() {
   const { hero, callout, ui } = useBlreImages()
   return (
-    <Layout>
+    <>
       <Seo title="Easy Instagram Feed" />
       <Hero
         image={hero}
@@ -46,10 +45,10 @@ export default function EasyInstagramFeed() {
               professionalism.{" "}
             </p>
             <br />
-            <Img fluid={hero} />
+            {/* <Img fluid={hero} /> */}
             <br />
             <Grid xsCols="2" data-align-center>
-              <Img fluid={callout} />
+              {/* <Img fluid={callout} /> */}
               <p>
                 We achieved a sense of professionalism through the use of a
                 clean sans-serif as the primary typeface, and a sturdy slab
@@ -80,7 +79,7 @@ export default function EasyInstagramFeed() {
                 decision was made to transfer the website over to a purely
                 WordPress implementation.
               </p>
-              <Img fluid={ui} />
+              {/* <Img fluid={ui} /> */}
             </Grid>
             <br />
             <p>
@@ -94,20 +93,24 @@ export default function EasyInstagramFeed() {
           <aside>
             <h3 className="h3 black">Details</h3>
             <p>
-              <strong>Title</strong>: Brotherly Love Real Estate Website
+              <strong className="bold">Title</strong>: Brotherly Love Real
+              Estate Website
             </p>
             <p>
-              <strong>Client</strong>: Brotherly Love Real Estate
+              <strong className="bold">Client</strong>: Brotherly Love Real
+              Estate
             </p>
             <p>
-              <strong>Tools</strong>: WordPress, Gatsby Js, React, Sass, Webpack
+              <strong className="bold">Tools</strong>: WordPress, Gatsby Js,
+              React, Sass, Webpack
             </p>
             <p>
-              <strong>Deliverables</strong>: Design, Development, UI, SEO
+              <strong className="bold">Deliverables</strong>: Design,
+              Development, UI, SEO
             </p>
           </aside>
         </Grid>
       </Splash>
-    </Layout>
+    </>
   )
 }

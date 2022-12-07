@@ -1,0 +1,96 @@
+.bg\:dark-gradient {
+  background: var(--color-gradient-darkness);
+}
+
+.bg\:black {
+  background-color: var(--color-black);
+}
+
+.bg\:black\:50::after {
+  inset: 0;
+  position: absolute;
+
+  background-color: var(--color-black);
+  content: "";
+  opacity: 0.5;
+}
+
+.bg\:gray-5 {
+  background-color: var(--color-gray-5);
+}
+
+.border {
+  height: 2px;
+}
+
+.bg\:gray1 {
+  background: var(--color-gray-1);
+}
+
+.bg\:gray1\:10 {
+  background-color: var(--color-gray-1);
+  opacity: 0.1;
+}
+
+.bg\:white {
+  background: var(--color-white);
+}
+
+.color\:black {
+  color: var(--color-black);
+}
+
+.color\:white {
+  color: var(--color-white);
+}
+
+.fill\:white {
+  fill: var(--color-white);
+}
+
+.has-overlay::after {
+  inset: 0;
+  position: absolute;
+
+  background-color: var(--color-black, #272321);
+  content: "";
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.rounded\:left {
+  border-radius: 0.5rem 0 0 0.5rem;
+
+  overflow: hidden;
+}
+
+.rounded\:right {
+  border-radius: 0 0.5rem 0.5rem 0;
+
+  overflow: hidden;
+}
+
+.text-decoration\:none {
+  text-decoration: none;
+}
+
+.transition\:transform {
+  transition: transform 250ms cubic-bezier(0.47, 0.14, 0.42, 1.05);
+}
+
+.transition\:transform\+opacity {
+  transition: transform 250ms cubic-bezier(0.47, 0.14, 0.42, 1.05),
+    opacity 250ms cubic-bezier(0.47, 0.14, 0.42, 1.05);
+}
+
+.translate\:x\:100 {
+  transform: translate3d(100%, 0, 0);
+}
+
+.opacity\:0 {
+  opacity: 0;
+}
+
+.opacity\:1 {
+  opacity: 1;
+}

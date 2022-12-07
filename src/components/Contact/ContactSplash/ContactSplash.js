@@ -1,17 +1,15 @@
 import React from "react"
 
-import Splash from "@components/Splash"
-import Tile from "@components/Tile"
+import Splash from "#components/Splash"
+import Tile from "#components/Tile"
 
-import { Grid } from "@components/Common"
-import { dislikes, likes, socialLinks } from "@constants"
-
-import styles from "./ContactSplash.module.css"
+import { Grid } from "#components/Common"
+import { dislikes, likes, socialLinks } from "#utils/constants"
 
 export default function ContactSplash() {
   return (
     <Splash style={{ backgroundColor: "var(--gray-1)" }}>
-      <div className={styles.ContactSplash}>
+      <div>
         <Grid mdCols="2">
           <div>
             <h2 className="h2 secondary-font bold uppercase">Get To Know Me</h2>
@@ -27,15 +25,15 @@ export default function ContactSplash() {
             </p>
             <p>
               In June of 2019, I decided to “shake things up” in my life and
-              moved to Denver, Colorado to work for the state’s Legislative
+              moved to Denver, Colorado to work for the state's Legislative
               Council Services. While there, I worked as a UI Developer
               designing and building web apps with React and Rails.
             </p>
             <p>
               In March of 2020, I left the Legislative Council (and Denver, due
-              to COVID), and began working remotely for O’Reilly Media.
+              to COVID), and began working remotely for O'Reilly Media.
               Currently, I help to maintain and improve the Search experience
-              for the O’Reilly Learning Platform in a React/Redux Web
+              for the O'Reilly Learning Platform in a React/Redux Web
               Application.
             </p>
           </div>

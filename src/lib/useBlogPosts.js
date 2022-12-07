@@ -12,15 +12,8 @@ export function useBlogPosts() {
               tags
               slug
               title
-              imagePath {
-                childImageSharp {
-                  fluid(maxWidth: 320) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
+              imagePath
             }
-            id
           }
         }
       }
@@ -30,20 +23,20 @@ export function useBlogPosts() {
   if (!data?.allMdx?.edges) {
     throw new Error("no posts found")
   }
-  const formattedPosts = formatPosts(data?.allMdx?.edges);
+  const formattedPosts = formatPosts(data?.allMdx?.edges)
   return formattedPosts
 
   function formatPosts(posts) {
-    return posts.map(formatPost);
+    return posts.map(formatPost)
   }
 
   function formatPost(post) {
-    const { frontmatter, id } = post.node;
+    const { frontmatter, id } = post.node
     const tags = frontmatter.tags.replace(/\s/g, "").split(",")
     return {
       frontmatter,
       tags,
-      id
+      id,
     }
   }
 }

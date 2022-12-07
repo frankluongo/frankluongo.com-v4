@@ -1,0 +1,180 @@
+.align\:center {
+  align-items: center;
+}
+
+.align\:end {
+  align-items: flex-end;
+}
+
+.down\:4 {
+  margin-bottom: -4rem;
+}
+
+.gap\:0\.5 {
+  gap: 0.5rem;
+}
+
+.gap\:1 {
+  gap: 1rem;
+}
+
+.gap\:1\.5 {
+  gap: 1.5rem;
+}
+
+.gc\:1\:1 {
+  grid-column: 1 / span 1;
+}
+
+.gc\:1\:2 {
+  grid-column: 1 / span 2;
+}
+
+.gc\:1\:4 {
+  grid-column: 1 / span 4;
+}
+
+.gc\:1\:3 {
+  grid-column: 1 / span 3;
+}
+
+.gc\:2 {
+  grid-column: span 2;
+}
+
+.gc\:2\:2 {
+  grid-column: 2 / span 2;
+}
+
+.gc\:3 {
+  grid-column: span 3;
+}
+
+.gc\:3\:2 {
+  grid-column: 3 / span 2;
+}
+
+.gc\:4 {
+  grid-column: span 4;
+}
+
+.grid {
+  display: grid;
+  gap: var(--grid-gap);
+  grid-template-columns: var(--grid-columns);
+  padding-inline: var(--grid-gap);
+}
+
+.gr\:1 {
+  grid-row: 1;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap\:wrap {
+  flex-wrap: wrap;
+}
+
+.fd\:column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.pull\:0\.5 {
+  margin-left: -0.5rem;
+}
+
+.pull\:1 {
+  margin-left: -1rem;
+}
+
+.push\:1 {
+  margin-right: -1rem;
+}
+
+.up\:4 {
+  margin-top: -4rem;
+}
+
+@media (max-width: 699px) {
+  .mx700\:fwrap {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 700px) {
+  .mn700\:flex {
+    display: flex;
+  }
+
+  .mn700\:gc\:1 {
+    grid-column: span 1;
+  }
+
+  .mn700\:gc\:2 {
+    grid-column: span 2;
+  }
+
+  .mn700\:gc\:2\:2 {
+    grid-column: 2 / span 2;
+  }
+
+  .mn700\:gc\:1\:2 {
+    grid-column: 1 / span 2;
+  }
+}
+
+@media (min-width: 900px) {
+  .mn900\:gap\:1 {
+    gap: 1rem;
+  }
+
+  .mn900\:gap\:1\.5 {
+    gap: 1.5rem;
+  }
+
+  .mn900\:gc\:1 {
+    grid-column: span 1;
+  }
+
+  .mn900\:gc\:1\:5 {
+    grid-column: 1 / span 5;
+  }
+
+  .mn900\:gc\:4\:2 {
+    grid-column: 4 / span 2;
+  }
+
+  .mn900\:gc\:2 {
+    grid-column: span 2;
+  }
+
+  .mn900\:gc\:2\:2 {
+    grid-column: 2 / span 2;
+  }
+
+  .mn900\:gc\:5 {
+    grid-column: span 5;
+  }
+
+  .mn900\:gc\:6 {
+    grid-column: span 6;
+  }
+
+  .mn900\:offset\:1 {
+    grid-column-start: 2;
+  }
+
+  .mn900\:pull\:1 {
+    margin-left: -1rem;
+  }
+
+  .mn900\:push\:0 {
+    margin-right: 0;
+  }
+}

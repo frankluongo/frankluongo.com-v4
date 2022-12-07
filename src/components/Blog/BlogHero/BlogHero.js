@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 
-import Hero from "@components/Hero"
+import Hero from "#components/Hero"
 
-import { useInterval } from "@hooks"
-import { useBlogImage } from "@lib"
+import { useInterval } from "#hooks"
+import { useBlogImage } from "#lib"
 
 export default function BlogHero() {
   const [c, setC] = useState(["i", "o"])

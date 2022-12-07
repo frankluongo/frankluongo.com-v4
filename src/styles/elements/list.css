@@ -1,0 +1,9 @@
+.list {
+  padding-left: 1rem;
+
+  list-style: disc;
+}
+
+.list li + li {
+  margin-top: 1rem;
+}

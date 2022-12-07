@@ -1,10 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { Button } from "@components/Common"
+import { Button } from "#components/Common"
 
 // import "./GitHubMarkdown.css"
-import styles from "./Post.module.css"
+import * as styles from "./Post.module.css"
 
 export default function Post({ children }) {
   return (

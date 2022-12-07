@@ -1,0 +1,37 @@
+.Box {
+  --bg: var(--theme-primary-bg-l2);
+}
+
+.Box::after {
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+
+  background: var(--bg);
+  content: "";
+  opacity: 0.5;
+}
+
+.Box[data-size="0.25"] {
+  padding: 0.25rem;
+}
+
+.Box[data-size="1"] {
+  padding: 1rem;
+}
+
+.Box[data-style="light"]::after {
+  --bg: var(--theme-primary-bg-l2);
+}
+
+.Box[data-style="gradient-blue"]::after {
+  --bg: var(--color-gradient-cool);
+
+  opacity: 1;
+}
+
+.Box[data-style="gradient-red"]::after {
+  --bg: var(--color-gradient-warm);
+
+  opacity: 1;
+}

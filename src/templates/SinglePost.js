@@ -2,18 +2,17 @@ import React from "react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { graphql } from "gatsby"
 
-import Layout from "@global/Layout"
-import Seo from "@global/Seo"
-import Hero from "@components/Hero"
-import Splash from "@components/Splash"
+import Seo from "#global/Seo"
+import Hero from "#components/Hero"
+import Splash from "#components/Splash"
 
-import Post from "@post"
+import Post from "#post"
 
 export default function SinglePost({ data }) {
   const image = data.file.childImageSharp.fluid
   const { body, frontmatter } = data.mdx
   return (
-    <Layout>
+    <>
       <Seo title={frontmatter.title} />
       <Hero
         image={image}
@@ -25,12 +24,12 @@ export default function SinglePost({ data }) {
           <MDXRenderer>{body}</MDXRenderer>
         </Post>
       </Splash>
-    </Layout>
+    </>
   )
 }
 
 export const pageQuery = graphql`
-  query($slug: String!, $image: String!) {
+  query ($slug: String!, $image: String!) {
     mdx(frontmatter: { slug: { eq: $slug } }) {
       body
       frontmatter {

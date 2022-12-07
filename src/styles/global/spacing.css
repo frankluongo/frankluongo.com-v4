@@ -1,0 +1,137 @@
+.block-gap\:0\.5 > * + * {
+  margin-top: 0.5rem;
+}
+
+.block-gap\:1 > * + * {
+  margin-top: 1rem;
+}
+
+.h\:1\.5 {
+  height: 1.5rem;
+}
+
+.h\:2 {
+  height: 2rem;
+}
+
+.height\:1 {
+  height: 1rem;
+}
+
+.margin-bottom\:0\.5 {
+  margin-bottom: 0.5rem;
+}
+
+.mleft\:auto {
+  margin-left: auto;
+}
+
+.mright\:0\.5 {
+  margin-right: 0.5rem;
+}
+
+.minline\:auto {
+  margin-inline: auto;
+}
+
+.margin-top\:1 {
+  margin-top: 1rem;
+}
+
+.margin-top\:3 {
+  margin-top: 3rem;
+}
+
+.margin-top\:6 {
+  margin-top: 6rem;
+}
+
+.mw\:container {
+  max-width: var(--wrapper-width);
+}
+
+.padding\:0\.5 {
+  padding: 0.5rem;
+}
+
+.padding\:1 {
+  padding: 1rem;
+}
+
+.padding-block\:0\.5 {
+  padding-block: 0.5rem;
+}
+
+.padding-block\:1 {
+  padding-block: 1rem;
+}
+
+.padding-block\:1\.5 {
+  padding-block: 1.5rem;
+}
+
+.padding-block\:3 {
+  padding-block: 3rem;
+}
+
+.padding-inline\:1 {
+  padding-inline: 1rem;
+}
+
+.pright\:1 {
+  padding-right: 1rem;
+}
+
+.ptop\:1 {
+  padding-top: 1rem;
+}
+
+.w\:100 {
+  width: 100%;
+}
+
+.w\:100\:padded {
+  width: calc(100% - 2rem);
+}
+
+.up\:1\.75 {
+  margin-top: -1.75rem;
+}
+
+@media (min-width: 700px) {
+  .mn700\:p\:1 {
+    padding: 1rem;
+  }
+
+  .mn700\:padding-block\:3 {
+    padding-block: 3rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .mn900\:margin-top\:10 {
+    margin-top: 10rem;
+  }
+
+  .mn900\:margin-top\:12 {
+    margin-top: 12rem;
+  }
+
+  .mn900\:ptop\:2\.5 {
+    padding-top: 2.5rem;
+  }
+
+  .mn900\:pbottom\:0 {
+    padding-bottom: 0;
+  }
+
+  .mn900\:up\:8 {
+    margin-top: -8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mn1200\:margin-top\:9 {
+    margin-top: 9rem;
+  }
+}

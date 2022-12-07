@@ -1,6 +1,6 @@
 import React from "react"
 
-import styles from "./Grid.module.css"
+import * as styles from "./Grid.module.css"
 
 export function Grid({ xsCols, smCols, mdCols, lgCols, children, ...props }) {
   return (

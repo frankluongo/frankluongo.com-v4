@@ -1,21 +1,41 @@
 import React from "react"
-import BackgroundImage from "gatsby-background-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { IconChevronRight } from "#components/Icons"
+import * as styles from "./Card.module.css"
 
-import styles from "./Card.module.css"
-
-import { IconChevronRight } from "@components/Icons"
-
-export default function Card({ url, heading, title, thumbnail, feature }) {
+export default function Card({
+  extraClasses,
+  url,
+  heading,
+  title,
+  thumbnail,
+  feature,
+}) {
+  const thumbnailImg = getImage(thumbnail)
+  const featImg = getImage(feature)
   return (
-    <div className={styles.CardWrapper}>
-      <a className={styles.Card} href={url}>
-        <header className={styles.Header} data-flex>
-          <BackgroundImage className={styles.Logo} Tag="div" fluid={thumbnail}  />
-          <span className="h6">{heading}</span>
+    <div className={`${styles.CardWrapper} ${extraClasses} bg:white`}>
+      <a
+        className={`pos:rel flex fd:column gap:0.5 mn900:gap:1 padding:0.5 mn700:p:1 text-decoration:none color:black`}
+        href={url}
+      >
+        <header className="mx700:display:none mn700:flex align:center">
+          <GatsbyImage
+            className={styles.Logo}
+            image={thumbnailImg}
+            alt={title}
+          />
+          <span className="fs:12">{heading}</span>
         </header>
-        <BackgroundImage className={styles.Thumbnail} Tag="figure" fluid={feature} />
-        <section className="h5">{title}</section>
-        <IconChevronRight className={styles.Icon} />
+        <GatsbyImage
+          className={`${styles.Thumbnail} bg:gray1`}
+          alt={title}
+          image={featImg}
+        />
+        <div className="flex gap:0.5 align:center mx700:fwrap">
+          <section className="fs:12 mn900:fs:14">{title}</section>
+          <IconChevronRight className={styles.Icon} />
+        </div>
       </a>
     </div>
   )

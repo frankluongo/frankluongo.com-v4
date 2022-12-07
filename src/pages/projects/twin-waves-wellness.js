@@ -1,20 +1,19 @@
 import React from "react"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 
-import Seo from "@global/Seo"
-import { useTwwcImages } from "@lib"
-import { Grid } from "@components/Common"
-import Splash from "@components/Splash"
-import Layout from "@global/Layout"
-import Hero from "@components/Hero"
+import Seo from "#global/Seo"
+import { useTwwcImages } from "#lib"
+import { Grid } from "#components/Common"
+import Splash from "#components/Splash"
+import Hero from "#components/Hero"
 
-import MainContent from "@project/MainContent"
+import MainContent from "#project/MainContent"
 
 export default function TwinWavesWellness() {
   const { footer, hero, ui } = useTwwcImages()
   const title = "Twin Waves Wellness Center"
   return (
-    <Layout>
+    <>
       <Seo title={title} />
       <Hero
         image={hero}
@@ -45,10 +44,10 @@ export default function TwinWavesWellness() {
               while she made the logomark.
             </p>
             <br />
-            <Img fluid={hero} />
+            {/* <Img fluid={hero} /> */}
             <br />
             <Grid xsCols="2" data-align-center>
-              <Img fluid={footer} />
+              {/* <Img fluid={footer} /> */}
               <p>
                 The goal for Twin Waves was to make the visitors to their
                 website feel like they’re at a beach. We want people to feel all
@@ -73,7 +72,7 @@ export default function TwinWavesWellness() {
                 There is an underlying CSS Design system, with the React
                 Component using CSS Modules to tie styles to a specific scope.
               </p>
-              <Img fluid={ui} />
+              {/* <Img fluid={ui} /> */}
             </Grid>
             <br />
             <p>
@@ -85,20 +84,23 @@ export default function TwinWavesWellness() {
           <aside>
             <h3 className="h3 black">Details</h3>
             <p>
-              <strong>Title</strong>: Twin Waves Wellness Center
+              <strong className="bold">Title</strong>: Twin Waves Wellness
+              Center
             </p>
             <p>
-              <strong>Client</strong>: Twin Waves Wellness
+              <strong className="bold">Client</strong>: Twin Waves Wellness
             </p>
             <p>
-              <strong>Tools</strong>: WordPress, Gatsby Js, React, Sass, Webpack
+              <strong className="bold">Tools</strong>: WordPress, Gatsby Js,
+              React, Sass, Webpack
             </p>
             <p>
-              <strong>Deliverables</strong>: Design, Development, UI, SEO
+              <strong className="bold">Deliverables</strong>: Design,
+              Development, UI, SEO
             </p>
           </aside>
         </Grid>
       </Splash>
-    </Layout>
+    </>
   )
 }

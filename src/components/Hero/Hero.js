@@ -1,10 +1,9 @@
 import React from "react"
 import BackgroundImage from "gatsby-background-image"
 
-import { Container, Wrapper } from "@components/Common"
-import Availability from "@components/Availability"
+import { Availability } from "#components/Availability/Availability"
 
-import styles from "./Hero.module.css"
+import * as styles from "./Hero.module.css"
 import { Button } from "../Common/Button/Button"
 
 export default function Hero({
@@ -16,10 +15,10 @@ export default function Hero({
 }) {
   return (
     <div className={styles.HeroWrapper}>
-      <Wrapper>
+      <div>
         <BackgroundImage className={styles.Hero} Tag={`section`} fluid={image}>
           <div className={styles.HeroInner}>
-            <Container modifiers={styles.HeroContainer}>
+            <section className={`container ${styles.HeroContainer}`}>
               <div className={styles.Content}>
                 <h1>{headline}</h1>
                 {strapline && <p className={styles.Strapline}>{strapline}</p>}
@@ -28,10 +27,10 @@ export default function Hero({
                 )}
                 {button && <Button {...button.props}>{button.text}</Button>}
               </div>
-            </Container>
+            </section>
           </div>
         </BackgroundImage>
-      </Wrapper>
+      </div>
     </div>
   )
 }

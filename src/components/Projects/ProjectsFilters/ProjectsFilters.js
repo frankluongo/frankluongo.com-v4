@@ -1,14 +1,14 @@
 import React from "react"
 
-import { CheckBoxGroup } from "@components/Common"
-import { types, tech, work } from "@constants"
-import { useFiltersContext } from "@context"
-import { useCheck } from "@hooks";
+import { CheckBoxGroup } from "#components/Common"
+import { types, tech, work } from "#utils/constants"
+import { useFiltersContext } from "#context/ContextFilters"
+import { useCheck } from "#hooks"
 
-import styles from "./ProjectsFilters.module.css"
+import * as styles from "./ProjectsFilters.module.css"
 
 export default function ProjectsFilters() {
-  const { activeFilters, setActiveFilters } = useFiltersContext();
+  const { activeFilters, setActiveFilters } = useFiltersContext()
   const onCheck = useCheck(activeFilters, setActiveFilters)
   return (
     <section className={styles.Filters}>

@@ -1,18 +1,17 @@
 import React from "react"
 
-import Seo from "@global/Seo"
-import { useLoresImages } from "@lib"
-import { Grid } from "@components/Common"
-import Splash from "@components/Splash"
-import Layout from "@global/Layout"
-import Hero from "@components/Hero"
+import Seo from "#global/Seo"
+import { useLoresImages } from "#lib"
+import { Grid } from "#components/Common"
+import Splash from "#components/Splash"
+import Hero from "#components/Hero"
 
-import MainContent from "@project/MainContent"
+import MainContent from "#project/MainContent"
 
 export default function BrotherlyLoveRealEstate() {
   const { home } = useLoresImages()
   return (
-    <Layout>
+    <>
       <Seo title="Lore’s Chocolates" />
       <Hero
         image={home}
@@ -59,20 +58,22 @@ export default function BrotherlyLoveRealEstate() {
           <aside>
             <h3 className="h3 black">Details</h3>
             <p>
-              <strong>Title</strong>: Lore’s Chocolates
+              <strong className="bold">Title</strong>: Lore’s Chocolates
             </p>
             <p>
-              <strong>Client</strong>: Lore’s Chocolates
+              <strong className="bold">Client</strong>: Lore’s Chocolates
             </p>
             <p>
-              <strong>Tools</strong>: WordPress, Shopify, Webpack, ES6, Sass
+              <strong className="bold">Tools</strong>: WordPress, Shopify,
+              Webpack, ES6, Sass
             </p>
             <p>
-              <strong>Deliverables</strong>: Development, UI, SEO
+              <strong className="bold">Deliverables</strong>: Development, UI,
+              SEO
             </p>
           </aside>
         </Grid>
       </Splash>
-    </Layout>
+    </>
   )
 }

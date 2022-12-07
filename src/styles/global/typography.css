@@ -1,0 +1,236 @@
+html {
+  font-size: 100%;
+}
+
+html,
+body,
+input,
+button {
+  font-family: var(--primary-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* ? FONT STYLES */
+/* * ============================================================= */
+
+.italic {
+  font-style: italic;
+}
+
+/* ? FONT SIZES */
+/* * ============================================================= */
+
+.fs\:96 {
+  font-size: var(--fs-96);
+}
+.fs\:80 {
+  font-size: var(--fs-80);
+}
+.fs\:64 {
+  font-size: var(--fs-64);
+}
+.fs\:48 {
+  font-size: var(--fs-48);
+}
+.fs\:32 {
+  font-size: var(--fs-32);
+}
+.fs\:24 {
+  font-size: var(--fs-24);
+}
+.fs\:16 {
+  font-size: var(--fs-16);
+}
+.fs\:14 {
+  font-size: var(--fs-14);
+}
+.fs\:12 {
+  font-size: var(--fs-12);
+}
+
+/* ? FONT WEIGHTS */
+/* * ============================================================= */
+
+.bold {
+  font-weight: bold;
+}
+
+.xbold {
+  font-weight: 900;
+}
+
+/* ? LINE HEIGHTS */
+/* * ============================================================= */
+
+.line-height\:1\.6 {
+  line-height: 1.6;
+}
+
+.line-height\:1 {
+  line-height: 1;
+}
+
+/* ? TEXT ALIGN */
+/* * ============================================================= */
+
+.text-align\:center {
+  text-align: center;
+}
+
+/* ? TEXT DECORATION */
+/* * ============================================================= */
+
+.text-decoration\:none {
+  text-decoration: none;
+}
+
+/* ? TEXT STYLING */
+/* * ============================================================= */
+
+.pgmw {
+  max-width: 30em;
+}
+
+/* ? TEXT TRANSFORMS */
+/* * ============================================================= */
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* ? MIN600PX MEDIA QUERY */
+/* * ============================================================= */
+
+@media (min-width: 600px) {
+  .mn600\:fs\:96 {
+    font-size: var(--fs-96);
+  }
+  .mn600\:fs\:80 {
+    font-size: var(--fs-80);
+  }
+  .mn600\:fs\:64 {
+    font-size: var(--fs-64);
+  }
+  .mn600\:fs\:48 {
+    font-size: var(--fs-48);
+  }
+  .mn600\:fs\:32 {
+    font-size: var(--fs-32);
+  }
+  .mn600\:fs\:24 {
+    font-size: var(--fs-24);
+  }
+  .mn600\:fs\:16 {
+    font-size: var(--fs-16);
+  }
+  .mn600\:fs\:14 {
+    font-size: var(--fs-14);
+  }
+  .mn600\:fs\:12 {
+    font-size: var(--fs-12);
+  }
+}
+
+/* ? MIN700PX MEDIA QUERY */
+/* * ============================================================= */
+
+@media (min-width: 700px) {
+  .mn700\:fs\:96 {
+    font-size: var(--fs-96);
+  }
+  .mn700\:fs\:80 {
+    font-size: var(--fs-80);
+  }
+  .mn700\:fs\:64 {
+    font-size: var(--fs-64);
+  }
+  .mn700\:fs\:48 {
+    font-size: var(--fs-48);
+  }
+  .mn700\:fs\:32 {
+    font-size: var(--fs-32);
+  }
+  .mn700\:fs\:24 {
+    font-size: var(--fs-24);
+  }
+  .mn700\:fs\:16 {
+    font-size: var(--fs-16);
+  }
+  .mn700\:fs\:14 {
+    font-size: var(--fs-14);
+  }
+  .mn700\:fs\:12 {
+    font-size: var(--fs-12);
+  }
+}
+
+/* ? MIN900PX MEDIA QUERY */
+/* * ============================================================= */
+
+@media (min-width: 900px) {
+  .mn900\:fs\:96 {
+    font-size: var(--fs-96);
+  }
+  .mn900\:fs\:80 {
+    font-size: var(--fs-80);
+  }
+  .mn900\:fs\:64 {
+    font-size: var(--fs-64);
+  }
+  .mn900\:fs\:48 {
+    font-size: var(--fs-48);
+  }
+  .mn900\:fs\:32 {
+    font-size: var(--fs-32);
+  }
+  .mn900\:fs\:24 {
+    font-size: var(--fs-24);
+  }
+  .mn900\:fs\:16 {
+    font-size: var(--fs-16);
+  }
+  .mn900\:fs\:14 {
+    font-size: var(--fs-14);
+  }
+  .mn900\:fs\:12 {
+    font-size: var(--fs-12);
+  }
+}
+
+/* ? MIN1200PX MEDIA QUERY */
+/* * ============================================================= */
+
+@media (min-width: 1200px) {
+  .mn1200\:fs\:96 {
+    font-size: var(--fs-96);
+  }
+  .mn1200\:fs\:80 {
+    font-size: var(--fs-80);
+  }
+  .mn1200\:fs\:64 {
+    font-size: var(--fs-64);
+  }
+  .mn1200\:fs\:48 {
+    font-size: var(--fs-48);
+  }
+  .mn1200\:fs\:32 {
+    font-size: var(--fs-32);
+  }
+  .mn1200\:fs\:24 {
+    font-size: var(--fs-24);
+  }
+  .mn1200\:fs\:16 {
+    font-size: var(--fs-16);
+  }
+  .mn1200\:fs\:14 {
+    font-size: var(--fs-14);
+  }
+  .mn1200\:fs\:12 {
+    font-size: var(--fs-12);
+  }
+}

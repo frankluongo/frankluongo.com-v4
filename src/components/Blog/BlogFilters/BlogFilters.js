@@ -1,14 +1,14 @@
 import React from "react"
 
-import { CheckBoxGroup } from "@components/Common"
-import { tags } from "@constants"
-import { useFiltersContext } from "@context"
-import { useCheck } from "@hooks";
+import { CheckBoxGroup } from "#components/Common"
+import { tags } from "#utils/constants"
+import { useFiltersContext } from "#context/ContextFilters"
+import { useCheck } from "#hooks"
 
-import styles from "./BlogFilters.module.css"
+import * as styles from "./BlogFilters.module.css"
 
 export default function BlogFilters() {
-  const { activeFilters, setActiveFilters } = useFiltersContext();
+  const { activeFilters, setActiveFilters } = useFiltersContext()
   const onCheck = useCheck(activeFilters, setActiveFilters)
 
   return (

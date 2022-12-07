@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-import { PHOTOS, TIME, HOUR, FEED } from "@constants"
+import { PHOTOS, TIME, HOUR, FEED } from "#utils/constants"
 
 export function useInstagram() {
   const [photos, setPhotos] = useState(null)
@@ -24,8 +24,8 @@ export function useInstagram() {
           localStorage.setItem(PHOTOS, JSON.stringify(cleanPhotos))
           localStorage.setItem(TIME, Date.now())
           setPhotos(cleanPhotos)
-        } catch(e) {
-          console.log(e);
+        } catch (e) {
+          console.log(e)
         }
       } else {
         setPhotos(storedPhotos)

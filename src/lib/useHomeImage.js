@@ -5,16 +5,15 @@ export function useHomeImage() {
     query {
       homeImage: file(relativePath: { eq: "desk-shot.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1920) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(
+            width: 1920
+            placeholder: BLURRED
+            formats: [AUTO, WEBP, AVIF]
+          )
         }
       }
     }
   `)
 
-  if (!data?.homeImage?.childImageSharp?.fluid) {
-    throw new Error("no image found")
-  }
-  return data.homeImage.childImageSharp.fluid
+  return data.homeImage
 }

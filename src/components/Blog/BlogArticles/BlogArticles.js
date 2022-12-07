@@ -1,15 +1,19 @@
 import React from "react"
 
-import { useBlogPosts } from "@lib"
-import { useFiltersContext } from "@context"
-import { useFilter } from "@hooks"
+import { useBlogPosts } from "#lib"
+import { useFiltersContext } from "#context/ContextFilters"
+import { useFilter } from "#hooks"
 
-import ArticleCard from "@components/ArticleCard"
+import ArticleCard from "#components/ArticleCard"
 
 export default function BlogArticles() {
-  const { activeFilters } = useFiltersContext();
+  const { activeFilters } = useFiltersContext()
   const posts = useBlogPosts()
-  const postsList = useFilter({ activeFilters, itemsList: posts, value: 'tags' });
+  const postsList = useFilter({
+    activeFilters,
+    itemsList: posts,
+    value: "tags",
+  })
 
   return (
     <>

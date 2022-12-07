@@ -1,0 +1,5 @@
+.Hero {
+  --min-height: clamp(25rem, 50vh, 42rem);
+  min-height: var(--min-height);
+  padding-block: 6rem;
+}

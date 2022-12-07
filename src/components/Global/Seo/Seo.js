@@ -1,6 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import { useMeta } from "@lib"
+import { useMeta } from "#lib"
 
 export default function Seo({ children, location, description, title, image }) {
   const meta = useMeta()

@@ -1,19 +1,18 @@
 import React from "react"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 
-import Seo from "@global/Seo"
-import { useMnsfImages } from "@lib"
-import { Grid } from "@components/Common"
-import Splash from "@components/Splash"
-import Layout from "@global/Layout"
-import Hero from "@components/Hero"
+import Seo from "#global/Seo"
+import { useMnsfImages } from "#lib"
+import { Grid } from "#components/Common"
+import Splash from "#components/Splash"
+import Hero from "#components/Hero"
 
-import MainContent from "@project/MainContent"
+import MainContent from "#project/MainContent"
 
 export default function Mnsfoundation() {
   const { blog, counter, home, shymaween } = useMnsfImages()
   return (
-    <Layout>
+    <>
       <Seo title="M. Night Shyamalan Foundation" />
       <Hero
         image={home}
@@ -46,10 +45,10 @@ export default function Mnsfoundation() {
               performance and appearance.
             </p>
             <br />
-            <Img fluid={counter} />
+            {/* <Img fluid={counter} /> */}
             <br />
             <Grid xsCols="2" data-align-center>
-              <Img fluid={blog} />
+              {/* <Img fluid={blog} /> */}
               <p>
                 The site is built using a completely custom WordPress Theme and
                 Advanced Custom Fields
@@ -64,7 +63,7 @@ export default function Mnsfoundation() {
                 the foundations annual donations. Building and maintaining that
                 experience has been a recurring project for us since 2017.
               </p>
-              <Img fluid={shymaween} />
+              {/* <Img fluid={shymaween} /> */}
             </Grid>
             <br />
             <p>
@@ -78,20 +77,24 @@ export default function Mnsfoundation() {
           <aside>
             <h3 className="h3 black">Details</h3>
             <p>
-              <strong>Title</strong>: M. Night Shyamalan Foundation
+              <strong className="bold">Title</strong>: M. Night Shyamalan
+              Foundation
             </p>
             <p>
-              <strong>Client</strong>: M. Night Shyamalan Foundation
+              <strong className="bold">Client</strong>: M. Night Shyamalan
+              Foundation
             </p>
             <p>
-              <strong>Tools</strong>: WordPress, Webpack, ES6, Sass
+              <strong className="bold">Tools</strong>: WordPress, Webpack, ES6,
+              Sass
             </p>
             <p>
-              <strong>Deliverables</strong>: Development, UI, SEO
+              <strong className="bold">Deliverables</strong>: Development, UI,
+              SEO
             </p>
           </aside>
         </Grid>
       </Splash>
-    </Layout>
+    </>
   )
 }

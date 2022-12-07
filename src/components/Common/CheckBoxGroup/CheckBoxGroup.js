@@ -1,8 +1,8 @@
 import React from "react"
 
-import { Checkbox } from "@components/Common"
+import { Checkbox } from "#components/Common"
 
-import styles from "./CheckBoxGroup.module.css"
+import * as styles from "./CheckBoxGroup.module.css"
 
 export function CheckBoxGroup({ singleSelect, options, title, callback }) {
   const type = singleSelect ? "radio" : "checkbox"

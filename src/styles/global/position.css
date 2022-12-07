@@ -1,0 +1,54 @@
+.bottom\:0 {
+  bottom: 0;
+}
+
+.center\:horizontal {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+.inset\:0 {
+  inset: 0;
+}
+
+.offset-right {
+  right: 0;
+  top: 58.5px;
+}
+
+.pos\:abs {
+  position: absolute;
+}
+
+.pos\:fix {
+  position: fixed;
+}
+
+.pos\:rel {
+  position: relative;
+}
+
+.z1 {
+  z-index: 1;
+}
+
+.z2 {
+  z-index: 2;
+}
+
+.z3 {
+  z-index: 3;
+}
+
+.z4 {
+  z-index: 4;
+}
+
+.z5 {
+  z-index: 5;
+}

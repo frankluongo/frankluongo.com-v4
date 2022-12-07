@@ -1,19 +1,18 @@
 import React from "react"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 
-import Seo from "@global/Seo"
-import { useJaiImages } from "@lib"
-import { Grid } from "@components/Common"
-import Splash from "@components/Splash"
-import Layout from "@global/Layout"
-import Hero from "@components/Hero"
+import Seo from "#global/Seo"
+import { useJaiImages } from "#lib"
+import { Grid } from "#components/Common"
+import Splash from "#components/Splash"
+import Hero from "#components/Hero"
 
-import MainContent from "@project/MainContent"
+import MainContent from "#project/MainContent"
 
 export default function JewelryAppraisalsInc() {
   const { home, services, ui } = useJaiImages()
   return (
-    <Layout>
+    <>
       <Seo title="Jewelry Appraisals, Inc." />
       <Hero
         image={home}
@@ -39,7 +38,7 @@ export default function JewelryAppraisalsInc() {
               digital experience.
             </p>
             <br />
-            <Img fluid={home} />
+            {/* <Img fluid={home} /> */}
             <br />
             <h3 className="h3 black">The Solution</h3>
             <Grid xsCols="2" data-align-center>
@@ -48,11 +47,11 @@ export default function JewelryAppraisalsInc() {
                 CSS and JavaScript. However, as the client’s needs progressed,
                 it made more sense to move the platform over to WordPress.
               </p>
-              <Img fluid={services} />
+              {/* <Img fluid={services} /> */}
             </Grid>
             <br />
             <Grid xsCols="2" data-align-center>
-              <Img fluid={ui} />
+              {/* <Img fluid={ui} /> */}
               <p>
                 Now, the site is built on a custom WordPress theme, allowing the
                 team at Jewelry Appraisals, Inc. to edit content themselves
@@ -63,20 +62,22 @@ export default function JewelryAppraisalsInc() {
           <aside>
             <h3 className="h3 black">Details</h3>
             <p>
-              <strong>Title</strong>: Jewelry Appraisals, Inc. Website
+              <strong className="bold">Title</strong>: Jewelry Appraisals, Inc.
+              Website
             </p>
             <p>
-              <strong>Client</strong>: Jewelry Appraisals, Inc.
+              <strong className="bold">Client</strong>: Jewelry Appraisals, Inc.
             </p>
             <p>
-              <strong>Tools</strong>: HTML, CSS, JavaScript
+              <strong className="bold">Tools</strong>: HTML, CSS, JavaScript
             </p>
             <p>
-              <strong>Deliverables</strong>: Design, Development, UI, SEO
+              <strong className="bold">Deliverables</strong>: Design,
+              Development, UI, SEO
             </p>
           </aside>
         </Grid>
       </Splash>
-    </Layout>
+    </>
   )
 }

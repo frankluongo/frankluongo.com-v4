@@ -1,8 +1,8 @@
 import React from "react"
 
-import Splash from "@components/Splash"
+import Splash from "#components/Splash"
 
-import { Grid } from "@components/Common"
+import { Grid } from "#components/Common"
 import ProjectsListings from "../ProjectsListings"
 import ProjectsFilters from "../ProjectsFilters"
 

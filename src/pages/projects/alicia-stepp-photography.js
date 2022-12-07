@@ -1,19 +1,19 @@
 import React from "react"
-import Img from "gatsby-image"
+// import { StaticImage } from "gatsby-plugin-image"
+// import Img from "gatsby-image"
 
-import Seo from "@global/Seo"
-import { useAsteppImages } from "@lib"
-import { Grid } from "@components/Common"
-import Splash from "@components/Splash"
-import Layout from "@global/Layout"
-import Hero from "@components/Hero"
+import Seo from "#global/Seo"
+import { useAsteppImages } from "#lib"
+import { Grid } from "#components/Common"
+import Splash from "#components/Splash"
+import Hero from "#components/Hero"
 
-import MainContent from "@project/MainContent"
+import MainContent from "#project/MainContent"
 
 export default function AliciaSteppPhotography() {
   const { overview, gallery, contactsheet, bio } = useAsteppImages()
   return (
-    <Layout>
+    <>
       <Seo title="Alicia Stepp Photography" />
       <Hero
         image={overview}
@@ -42,10 +42,10 @@ export default function AliciaSteppPhotography() {
               modifications.
             </p>
             <br />
-            <Img fluid={contactsheet} />
+            {/* <StaticImage fluid={contactsheet} /> */}
             <br />
             <Grid xsCols="2" data-align-center>
-              <Img fluid={gallery} />
+              {/* <StaticImage fluid={gallery} /> */}
               <p>
                 We implemented horizontal scrolling, CSS animations, and
                 parallax effects to make the digital experience lively and
@@ -63,26 +63,28 @@ export default function AliciaSteppPhotography() {
                 All styling and JavaScript are done via webpack and then
                 compiled for the site’s deployment.
               </p>
-              <Img fluid={bio} />
+              {/* <StaticImage fluid={bio} /> */}
             </Grid>
           </MainContent>
           <aside>
             <h3 className="h3 black">Details</h3>
             <p>
-              <strong>Title</strong>: Alicia Stepp Photography
+              <strong className="bold">Title</strong>: Alicia Stepp Photography
             </p>
             <p>
-              <strong>Client</strong>: Alicia Stepp
+              <strong className="bold">Client</strong>: Alicia Stepp
             </p>
             <p>
-              <strong>Tools</strong>: Squarespace, Webpack, ES6, Sass
+              <strong className="bold">Tools</strong>: Squarespace, Webpack,
+              ES6, Sass
             </p>
             <p>
-              <strong>Deliverables</strong>: Development, UI, SEO
+              <strong className="bold">Deliverables</strong>: Development, UI,
+              SEO
             </p>
           </aside>
         </Grid>
       </Splash>
-    </Layout>
+    </>
   )
 }

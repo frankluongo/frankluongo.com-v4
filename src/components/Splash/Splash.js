@@ -1,9 +1,8 @@
 import React from "react"
 
-import { Container } from "@components/Common"
-import { IconChevronDown } from "@components/Icons"
+import { IconChevronDown } from "#components/Icons"
 
-import styles from "./Splash.module.css"
+import * as styles from "./Splash.module.css"
 
 export default function Splash({ children, fullWidth, header, ...props }) {
   return (
@@ -16,15 +15,17 @@ export default function Splash({ children, fullWidth, header, ...props }) {
       )}
       <div className={styles.Splash}>
         <div className={styles.SplashBg} {...props} />
-        {fullWidth ?
-          (
-            <div className={styles.SplashContainer} data-no-margin>
-              {children}
-            </div>
-          ) : (
-          <Container modifiers={styles.SplashContainer} data-no-margin>
+        {fullWidth ? (
+          <div className={styles.SplashContainer} data-no-margin>
             {children}
-          </Container>
+          </div>
+        ) : (
+          <section
+            className={`container ${styles.SplashContainer}`}
+            data-no-margin
+          >
+            {children}
+          </section>
         )}
       </div>
     </div>
@@ -32,5 +33,5 @@ export default function Splash({ children, fullWidth, header, ...props }) {
 }
 
 Splash.defaultProps = {
-  fullWidth: false
+  fullWidth: false,
 }

@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { navLinks } from "@constants"
+import { navLinks } from "#utils/constants"
 
 export default function Navigation({
   navClass,
